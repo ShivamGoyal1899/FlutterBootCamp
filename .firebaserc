@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "ieeethapar"
+  },
+  "targets": {
+    "ieeethapar": {
+      "hosting": {
+        "flutter-ieeethapar": [
+          "flutter-ieeethapar"
+        ]
+      }
+    }
   }
 }

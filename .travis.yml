@@ -6,4 +6,5 @@ script:
 install:
   - npm install -g firebase-tools
 after_success:
-  - firebase deploy --project flutter-ieeethapar --token $FIREBASE_TOKEN
+  - firebase target:apply hosting flutter-ieeethapar flutter-ieeethapar
+  - firebase deploy --project ieeethapar --token $FIREBASE_TOKEN
