@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="133.184" height="133.901" viewBox="0 0 133.184 133.901">
+    <defs>
+        <style>
+            .cls-1{fill:#2199e3}.cls-2{filter:url(#Path_528)}
+        </style>
+        <filter id="Path_528" width="133.184" height="133.901" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_892" data-name="Group 892" transform="translate(-137.102 -5933.097)">
+        <g id="Group_891" data-name="Group 891">
+            <g id="Group_890" class="cls-2" data-name="Group 890" transform="translate(137.1 5933.1)">
+                <path id="Path_528-2" d="M261.286 5939.129c-.24 0-.473-.033-.716-.032A115.317 115.317 0 0 0 146.1 6055l51.888-.308c-.224-36.169 26.721-65.774 62.886-66 .138 0 .271.018.408.018z" class="cls-1" data-name="Path 528" transform="translate(-137.1 -5933.1)"/>
+            </g>
+        </g>
+    </g>
+</svg>

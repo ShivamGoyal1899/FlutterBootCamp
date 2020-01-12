@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2730.5" viewBox="0 0 1440 2730.5">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:#fff}.cls-2{fill:#2199e3}.cls-3{stroke:rgba(0,0,0,0)}.cls-4{filter:url(#Ellipse_301)}
+        </style>
+        <filter id="Ellipse_301" width="311.188" height="311.188" x="214.565" y="1487.951" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="2"/>
+            <feGaussianBlur result="blur" stdDeviation="3.5"/>
+            <feFlood flood-opacity=".149"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="background" transform="translate(.001 .5)">
+        <path id="Rectangle_1099" d="M0 0h1439.056v2730H0z" class="cls-1" data-name="Rectangle 1099"/>
+        <path id="Path_461" d="M1.181 2150.768l754.333 618.118L1.4 2657.678z" class="cls-2" data-name="Path 461" transform="translate(-1.181 -1626.526)"/>
+        <path id="Subtraction_59" d="M284.139 245.535a289.792 289.792 0 0 1-52.851-4.872 285.964 285.964 0 0 1-49.641-13.993 286.876 286.876 0 0 1-45.56-22.242 288.949 288.949 0 0 1-40.608-29.619 289.755 289.755 0 0 1-34.784-36.124 288.552 288.552 0 0 1-28.09-41.759 286.473 286.473 0 0 1-20.521-46.518A286.237 286.237 0 0 1 0 0h284.229l-.09 245.534z" class="cls-3" data-name="Subtraction 59" transform="translate(1153.575)"/>
+        <path id="Path_464" d="M1442.3 3986.4c-129.352-.879-236.684-106.452-235.805-235.8s106.453-233.5 235.805-232.62z" class="cls-2" data-name="Path 464" transform="translate(-3.247 -1626.526)"/>
+        <path id="Path_465" d="M625.352 3433.05c-1.134 166.85-137.309 305.29-304.152 304.156S20.014 3599.9 21.149 3433.05z" class="cls-1" data-name="Path 465" transform="translate(.935 -1626.526)"/>
+        <path id="Subtraction_58" d="M0 1810.963l1.19-780.533L1247.442 0H1440v610.093L0 1810.963z" class="cls-1" data-name="Subtraction 58" transform="translate(-.001 -.5)"/>
+        <g class="cls-4" transform="translate(0 -.5)">
+            <circle id="Ellipse_301-2" cx="102.597" cy="102.597" r="102.597" class="cls-1" data-name="Ellipse 301" transform="rotate(-45 2093.05 551.5)"/>
+        </g>
+        <path id="Path_546" d="M1442.656 3454.674L696.71 2843.539l746.945-608.7z" class="cls-2" data-name="Path 546" transform="translate(-3.711 -1626.526)"/>
+    </g>
+</svg>

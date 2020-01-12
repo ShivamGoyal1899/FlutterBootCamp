@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125.275" height="125.276" viewBox="0 0 125.275 125.276">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#Ellipse_339);
+      }
+    </style>
+    <filter id="Ellipse_339" x="0" y="0" width="125.275" height="125.276" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <circle id="Ellipse_339-2" data-name="Ellipse 339" class="cls-1" cx="36.867" cy="36.867" r="36.867" transform="translate(8.5 60.64) rotate(-45)"/>
+  </g>
+</svg>

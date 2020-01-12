@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125.275" height="125.276" viewBox="0 0 125.275 125.276">
+    <defs>
+        <style>
+            .cls-1{fill:#002161}.cls-2{filter:url(#Ellipse_291)}
+        </style>
+        <filter id="Ellipse_291" width="125.275" height="125.276" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="2"/>
+            <feGaussianBlur result="blur" stdDeviation="3.5"/>
+            <feFlood flood-opacity=".149"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g class="cls-2">
+        <circle id="Ellipse_291-2" cx="36.867" cy="36.867" r="36.867" class="cls-1" data-name="Ellipse 291" transform="rotate(-45 77.449 20.06)"/>
+    </g>
+</svg>

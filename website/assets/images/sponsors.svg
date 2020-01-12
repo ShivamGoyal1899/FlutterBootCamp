@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1459.799" height="1058.33" viewBox="0 0 1459.799 1058.33">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{filter:url(#Path_916)}.cls-3{filter:url(#Path_900)}.cls-4{filter:url(#Ellipse_542)}.cls-5{filter:url(#Path_899)}.cls-6{filter:url(#Ellipse_541)}
+        </style>
+        <filter id="Ellipse_541" width="236.381" height="236.38" x="1218.969" y="643.57" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Path_899" width="1458" height="1058.33" x=".049" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Ellipse_542" width="236.381" height="236.38" x="27.709" y="69.8" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-3" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Path_900" width="622.217" height="322.167" x="837.582" y="17.22" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-4" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-4" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Path_916" width="196.52" height="646.06" x="0" y="110.82" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-5" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-5" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="backgrond_sponsors" data-name="backgrond sponsors" transform="translate(10.684 7.61)">
+        <path id="Rectangle_1083" d="M0 0h1440v1038H0z" class="cls-1" data-name="Rectangle 1083"/>
+        <g id="Group_3026" data-name="Group 3026" transform="translate(-2.064 -7450)">
+            <g id="Group_2198" class="cls-6" data-name="Group 2198" transform="translate(-8.62 7442.39)">
+                <circle id="Ellipse_541-2" cx="109.19" cy="109.19" r="109.19" class="cls-1" data-name="Ellipse 541" transform="translate(1227.97 649.57)"/>
+            </g>
+        </g>
+        <g id="Group_3028" data-name="Group 3028" transform="translate(-2.064 -7450)">
+            <g id="Group_2202" class="cls-4" data-name="Group 2202" transform="translate(-8.62 7442.39)">
+                <circle id="Ellipse_542-2" cx="109.19" cy="109.19" r="109.19" class="cls-1" data-name="Ellipse 542" transform="translate(36.71 75.8)"/>
+            </g>
+        </g>
+        <g id="Group_3029" data-name="Group 3029" transform="translate(-2.064 -7450)">
+            <g id="Group_2204" class="cls-3" data-name="Group 2204" transform="translate(-8.62 7442.39)">
+                <path id="Path_900-2" d="M1442.18 7465.61c-1.13 166.85-137.31 305.29-304.16 304.16s-301.18-137.31-300.05-304.16z" class="cls-1" data-name="Path 900" transform="translate(8.62 -7442.39)"/>
+            </g>
+        </g>
+        <g id="Group_3069" data-name="Group 3069" transform="translate(-2.064 -7450)">
+            <g id="Group_2302" class="cls-2" data-name="Group 2302" transform="translate(-8.62 7442.39)">
+                <path id="Path_916-2" d="M.38 7559.21v628.06c106.91-63.74 178.52-180.52 178.52-314.03S107.29 7622.95.38 7559.21z" class="cls-1" data-name="Path 916" transform="translate(8.62 -7442.39)"/>
+            </g>
+        </g>
+    </g>
+</svg>

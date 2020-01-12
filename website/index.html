@@ -2,361 +2,3571 @@
 <html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <meta charset="utf-8" />
-    <title>Flutter BootCamp 2020</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/swiper/css/swiper.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700&amp;display=swap" rel="stylesheet" />
+    <style data-href="./styles.f19e155af06d91334886.css">
+        @-webkit-keyframes floatY {
+            0% {
+                -webkit-transform: translateY(-5px);
+                transform: translateY(-5px)
+            }
 
-    <link class="main-stylesheet" href="assets/pages/css/pages.css" rel="stylesheet" type="text/css" />
-    <link class="main-stylesheet" href="assets/pages/css/pages-icons.css" rel="stylesheet" type="text/css" />
+            50% {
+                -webkit-transform: translateY(5px);
+                transform: translateY(5px)
+            }
 
-    <link rel="stylesheet" type="text/css" href="assets/css/base.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/demo2.css" />
+            to {
+                -webkit-transform: translateY(-5px);
+                transform: translateY(-5px)
+            }
+        }
+
+        @keyframes floatY {
+            0% {
+                -webkit-transform: translateY(-5px);
+                transform: translateY(-5px)
+            }
+
+            50% {
+                -webkit-transform: translateY(5px);
+                transform: translateY(5px)
+            }
+
+            to {
+                -webkit-transform: translateY(-5px);
+                transform: translateY(-5px)
+            }
+        }
+
+        @-webkit-keyframes floatX {
+            0% {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px)
+            }
+
+            50% {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px)
+            }
+
+            to {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px)
+            }
+        }
+
+        @keyframes floatX {
+            0% {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px)
+            }
+
+            50% {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px)
+            }
+
+            to {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px)
+            }
+        }
+
+        @-webkit-keyframes floatXY {
+            0% {
+                -webkit-transform: translate(-5px, -5px);
+                transform: translate(-5px, -5px)
+            }
+
+            50% {
+                -webkit-transform: translate(0);
+                transform: translate(0)
+            }
+
+            to {
+                -webkit-transform: translate(5px, 5px);
+                transform: translate(5px, 5px)
+            }
+        }
+
+        @keyframes floatXY {
+            0% {
+                -webkit-transform: translate(-5px, -5px);
+                transform: translate(-5px, -5px)
+            }
+
+            50% {
+                -webkit-transform: translate(0);
+                transform: translate(0)
+            }
+
+            to {
+                -webkit-transform: translate(5px, 5px);
+                transform: translate(5px, 5px)
+            }
+        }
+
+        @-webkit-keyframes pop {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @keyframes pop {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        :root {
+            --dark-sky-blue: #2199e3;
+            --mobile: 880px
+        }
+
+        body * {
+            box-sizing: border-box
+        }
+
+        a,
+        abbr,
+        acronym,
+        address,
+        applet,
+        article,
+        aside,
+        audio,
+        b,
+        big,
+        blockquote,
+        body,
+        canvas,
+        caption,
+        center,
+        cite,
+        code,
+        dd,
+        del,
+        details,
+        dfn,
+        div,
+        dl,
+        dt,
+        em,
+        embed,
+        fieldset,
+        figcaption,
+        figure,
+        footer,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        header,
+        hgroup,
+        html,
+        i,
+        iframe,
+        img,
+        ins,
+        kbd,
+        label,
+        legend,
+        li,
+        mark,
+        menu,
+        nav,
+        object,
+        ol,
+        output,
+        p,
+        pre,
+        q,
+        ruby,
+        s,
+        samp,
+        section,
+        small,
+        span,
+        strike,
+        strong,
+        sub,
+        summary,
+        sup,
+        table,
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        time,
+        tr,
+        tt,
+        u,
+        ul,
+        var,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            line-height: 1
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        blockquote,
+        q {
+            quotes: none
+        }
+
+        blockquote:after,
+        blockquote:before,
+        q:after,
+        q:before {
+            content: ""
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        .sectionTitle {
+            font-size: 33px;
+            font-weight: 900;
+            line-height: 1.2;
+            text-align: left;
+            color: #002161;
+            padding: 20px 0
+        }
+
+        .fullHeightPage {
+            min-height: 100vh
+        }
+
+        .sectionWrapper {
+            padding: 20px 20%;
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            position: relative
+        }
+
+        .innerWrapper {
+            max-width: 879px;
+            margin: auto;
+            z-index: 2;
+            position: relative
+        }
+
+        .modal-open {
+            overflow-y: hidden
+        }
+
+        @media (max-width:1200px) {
+            .sectionWrapper {
+                padding: 10px 10%
+            }
+        }
+
+        @media (max-width:880px) {
+            .sectionWrapper {
+                padding: 10px 5%
+            }
+
+            .sectionTitle {
+                font-size: 28px
+            }
+
+            .innerWrapper {
+                position: static
+            }
+        }
+
+        .hero-module--heroWrapper--22EMe {
+            min-height: 100vh;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1440' height='808' viewBox='5 5 1430 800'%3E%3Cdefs%3E%3Cstyle%3E.cls-1 { fill: %23ebebec; } .cls-2 { fill: %232199e3; } .cls-3 { fill: %23fff; } .cls-4 { fill: %23002161; } .cls-5 { filter: url(%23Path_476); } .cls-6 { filter: url(%23Path_499); } .cls-7 { filter: url(%23Path_495); }%3C/style%3E%3Cfilter id='Path_495' x='1074.807' y='59.924' width='377.96' height='734.92' filterUnits='userSpaceOnUse'%3E%3CfeOffset dx='2' dy='2' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='3.5' result='blur'/%3E%3CfeFlood flood-opacity='0.149'/%3E%3CfeComposite operator='in' in2='blur'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3Cfilter id='Path_499' x='570.54' y='0' width='881.056' height='104.401' filterUnits='userSpaceOnUse'%3E%3CfeOffset dx='2' dy='3' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='2' result='blur-2'/%3E%3CfeFlood flood-opacity='0.302'/%3E%3CfeComposite operator='in' in2='blur-2'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3Cfilter id='Path_476' x='271.062' y='496.88' width='632.627' height='326.813' filterUnits='userSpaceOnUse'%3E%3CfeOffset dx='2' dy='2' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='3.5' result='blur-3'/%3E%3CfeFlood flood-opacity='0.149'/%3E%3CfeComposite operator='in' in2='blur-3'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cg id='Group_1431' data-name='Group 1431' transform='translate(0.465 3)'%3E%3Cg id='background'%3E%3Cpath id='Path_471' data-name='Path 471' class='cls-1' d='M909.956,799.313H1440V0L570.944-.474Z' transform='translate(0.935 0.474)'/%3E%3Cpath id='Path_472' data-name='Path 472' class='cls-2' d='M1438.866,771.2V708L570.944-.474H-1.4v802H0V808H1440V771.2Z' transform='translate(0.935 0.474)'/%3E%3Cpath id='Path_477' data-name='Path 477' class='cls-3' d='M694.282,91.927H.8V-.474H573.141Z' transform='translate(0.935 0.474)'/%3E%3Cg class='cls-7' transform='matrix(1, 0, 0, 1, -0.46, -3)'%3E%3Cpath id='Path_495-2' data-name='Path 495' class='cls-2' d='M1438.866,628.6V613.705c-100.747-5.971-180.608-89.55-180.608-191.8s79.861-185.824,180.608-191.795v-46.9h0V64.95c-197.145,0-356.96,159.816-356.96,356.96s159.815,356.96,356.96,356.96V628.6Z' transform='translate(1.4 3.47)'/%3E%3C/g%3E%3Cg class='cls-6' transform='matrix(1, 0, 0, 1, -0.46, -3)'%3E%3Cpath id='Path_499-2' data-name='Path 499' class='cls-4' d='M1442.2,91.927H685.858L573.141-.474H1442.2Z' transform='translate(1.4 3.47)'/%3E%3C/g%3E%3Cg class='cls-5' transform='matrix(1, 0, 0, 1, -0.46, -3)'%3E%3Cpath id='Path_476-2' data-name='Path 476' class='cls-2' d='M419.662,807.719h-141.5c0-168.9,136.918-305.813,305.814-305.813S889.789,638.822,889.789,807.719H419.662Z' transform='translate(1.4 3.47)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: top;
+            color: var(--marine-blue)
+        }
+
+        .hero-module--hero--3c3vY {
+            min-height: calc(100vh - 100px);
+            padding: 100px 10% 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+            position: relative
+        }
+
+        .hero-module--heroImage--3huMi {
+            height: 61.8vh;
+            max-height: 400px
+        }
+
+        .hero-module--heroDetails--1pNir {
+            max-width: 532px;
+            z-index: 19
+        }
+
+        .hero-module--heroHeadline--30Al3 {
+            margin: 0;
+            font-size: 63px;
+            font-weight: 900;
+            line-height: 1.13
+        }
+
+        .hero-module--heroTitle--2LQf3 {
+            font-size: 29px;
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.28;
+            max-width: 324px;
+            padding-top: 25px
+        }
+
+        .hero-module--clock--HQg_X {
+            padding-bottom: 10vh
+        }
+
+        @media (max-width:1580px) {
+            .hero-module--heroHeadline--30Al3 {
+                font-size: 58px;
+                font-weight: 600
+            }
+
+            .hero-module--heroTitle--2LQf3 {
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 1.22
+            }
+        }
+
+        @media (max-width:880px) {
+            .hero-module--heroWrapper--22EMe {
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1440' height='808' viewBox='5 5 1430 800'%3E%3Cdefs%3E%3Cstyle%3E.cls-1 { fill: %23ebebec; } .cls-2 { fill: %232199e3; } .cls-3 { fill: %23fff; } .cls-4 { fill: %23002161; } .cls-5 { filter: url(%23Path_476); } .cls-6 { filter: url(%23Path_499); } .cls-7 { filter: url(%23Path_495); }%3C/style%3E%3Cfilter id='Path_495' x='1074.807' y='59.924' width='377.96' height='734.92' filterUnits='userSpaceOnUse'%3E%3CfeOffset dx='2' dy='2' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='3.5' result='blur'/%3E%3CfeFlood flood-opacity='0.149'/%3E%3CfeComposite operator='in' in2='blur'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3Cfilter id='Path_499' x='570.54' y='0' width='881.056' height='104.401' filterUnits='userSpaceOnUse'%3E%3CfeOffset dx='2' dy='3' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='2' result='blur-2'/%3E%3CfeFlood flood-opacity='0.302'/%3E%3CfeComposite operator='in' in2='blur-2'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3Cfilter id='Path_476' x='271.062' y='496.88' width='632.627' height='326.813' filterUnits='userSpaceOnUse'%3E%3CfeOffset dx='2' dy='2' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='3.5' result='blur-3'/%3E%3CfeFlood flood-opacity='0.149'/%3E%3CfeComposite operator='in' in2='blur-3'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cg id='Group_1431' data-name='Group 1431' transform='translate(0.465 3)'%3E%3Cg id='background'%3E%3Cpath id='Path_471' data-name='Path 471' class='cls-1' d='M909.956,799.313H1440V0L570.944-.474Z' transform='translate(0.935 0.474)'/%3E%3Cpath id='Path_472' data-name='Path 472' class='cls-2' d='M1438.866,771.2V708L570.944-.474H-1.4v802H0V808H1440V771.2Z' transform='translate(0.935 0.474)'/%3E%3Cg class='cls-7' transform='matrix(1, 0, 0, 1, -0.46, -3)'%3E%3Cpath id='Path_495-2' data-name='Path 495' class='cls-2' d='M1438.866,628.6V613.705c-100.747-5.971-180.608-89.55-180.608-191.8s79.861-185.824,180.608-191.795v-46.9h0V64.95c-197.145,0-356.96,159.816-356.96,356.96s159.815,356.96,356.96,356.96V628.6Z' transform='translate(1.4 3.47)'/%3E%3C/g%3E%3Cg class='cls-5' transform='matrix(1, 0, 0, 1, -0.46, -3)'%3E%3Cpath id='Path_476-2' data-name='Path 476' class='cls-2' d='M419.662,807.719h-141.5c0-168.9,136.918-305.813,305.814-305.813S889.789,638.822,889.789,807.719H419.662Z' transform='translate(1.4 3.47)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                background-position: 100%;
+                background-color: #2199e3;
+                min-height: calc(100vh - 70px);
+                padding: 10px 5%
+            }
+
+            .hero-module--hero--3c3vY {
+                flex-direction: column-reverse;
+                padding-top: 20px;
+                z-index: 1
+            }
+
+            .hero-module--heroHeadline--30Al3 {
+                font-size: 36px;
+                font-weight: 900;
+                line-height: 1.06
+            }
+
+            .hero-module--heroTitle--2LQf3 {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1.22
+            }
+        }
+
+        .buton-module--bt--3Ud8d {
+            background-color: #f05929;
+            width: 304px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            line-height: 1.14;
+            text-align: left;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 5.4vh;
+            letter-spacing: 1.32px
+        }
+
+        @media (max-width:880px) {
+            .buton-module--bt--3Ud8d {
+                font-size: 14px;
+                height: 40px !important;
+                width: 220px !important
+            }
+        }
+
+        .countdown-module--display--37xxE {
+            display: flex;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff
+        }
+
+        .countdown-module--digit--2WWef {
+            font-size: 51px;
+            font-weight: 900;
+            line-height: 1.16;
+            color: #f05929;
+            padding: 0 15px;
+            position: relative
+        }
+
+        .countdown-module--digit--2WWef:not(.countdown-module--sec--26s5v):after {
+            content: ".";
+            display: inline-block;
+            position: absolute;
+            right: -10px;
+            bottom: 20%
+        }
+
+        .countdown-module--label--2rtYp {
+            text-align: center
+        }
+
+        @media (max-width:880px) {
+            .countdown-module--display--37xxE {
+                width: 260px;
+                height: 260px
+            }
+
+            .countdown-module--digit--2WWef {
+                font-size: 28px
+            }
+
+            .countdown-module--label--2rtYp {
+                font-size: 13px
+            }
+        }
+
+        .wrapperH {
+            position: absolute;
+            top: 92px;
+            bottom: 0;
+            right: 0;
+            left: 0
+        }
+
+        .circle {
+            left: 40px;
+            top: 50px;
+            -webkit-animation: floatY 3.22s ease-in-out .1s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .1s;
+            animation: floatY 3.22s ease-in-out .1s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .1s
+        }
+
+        .circleBlue {
+            left: auto;
+            right: 5px;
+            top: 17vh;
+            -webkit-animation: floatXY 2.7s ease-in .3s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .3s;
+            animation: floatXY 2.7s ease-in .3s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .3s
+        }
+
+        .lb {
+            left: -110px;
+            bottom: 7vh;
+            -webkit-animation: floatXY 3s ease-in .5s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .5s;
+            animation: floatXY 3s ease-in .5s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .5s
+        }
+
+        .rb {
+            left: auto;
+            right: 20vw;
+            bottom: 30px;
+            -webkit-animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s;
+            animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s
+        }
+
+        .mb {
+            left: 40vw;
+            bottom: 16vh;
+            -webkit-animation: floatX 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95);
+            animation: floatX 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95)
+        }
+
+        .mt {
+            left: 36.5vw;
+            top: 15vh;
+            -webkit-animation: floatY 2.4s ease-in-out .9s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .9s;
+            animation: floatY 2.4s ease-in-out .9s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .9s
+        }
+
+        .circle,
+        .circleBlue,
+        .lb,
+        .mb,
+        .mt,
+        .rb,
+        rb {
+            position: absolute;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            will-change: transform
+        }
+
+        .rHalf {
+            right: 0
+        }
+
+        @media (max-width:880px) {
+            .wrapperH {
+                display: none
+            }
+        }
+
+        :root {
+            --marine-blue: #002161
+        }
+
+        .navigation-module--header--2XMjh {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            z-index: 159;
+            width: 100%;
+            height: 100px
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around
+        }
+
+        .navigation-module--navigation--3wdaI {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            font-size: 16px;
+            font-weight: 300;
+            max-height: 800px
+        }
+
+        .navigation-module--mobileNav--1DXVp {
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100vw;
+            background-color: #002161
+        }
+
+        .navigation-module--mobileNav--1DXVp li {
+            font-size: 18px;
+            line-height: 3.06;
+            font-weight: 300;
+            color: #fff;
+            text-align: center
+        }
+
+        .navigation-module--tooltip--3S8On {
+            position: absolute;
+            top: 10%;
+            padding: 5px;
+            background: #f05929;
+            border-radius: 8px;
+            opacity: 0;
+            -webkit-transition: opacity .3s ease-in-out;
+            transition: opacity .3s ease-in-out;
+            font-size: 12px
+        }
+
+        li:hover>.navigation-module--tooltip--3S8On {
+            opacity: 1
+        }
+
+        @media (max-width:1200px) {
+            .navigation-module--header--2XMjh {
+                height: 80px
+            }
+        }
+
+        @media (max-width:880px) {
+            .navigation-module--header--2XMjh {
+                position: relative;
+                height: 70px;
+                background-color: #002161;
+                justify-content: space-around
+            }
+
+            .navigation-module--mobileNav--1DXVp {
+                display: block;
+                max-height: 0;
+                overflow: hidden;
+                -webkit-transition: max-height .5s ease-in-out;
+                transition: max-height .5s ease-in-out
+            }
+
+            .navigation-module--open--33zQd .navigation-module--mobileNav--1DXVp {
+                max-height: 800px
+            }
+
+            .navigation-module--navigation--3wdaI {
+                display: none
+            }
+        }
+
+        .navigation-module--navigationItem--2gSPx {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 1em;
+            color: #fff;
+            cursor: pointer
+        }
+
+        .navigation-module--social--3Y0PF {
+            display: flex;
+            justify-content: center
+        }
+
+        .logo-module--container--1Rves {
+            width: 40%
+        }
+
+        .logo-module--logo--2YsjG {
+            padding: 10px 28%;
+            display: block
+        }
+
+        @media (max-width:880px) {
+            .logo-module--logo--2YsjG {
+                padding: 10px 5%
+            }
+        }
+
+        .hamburger {
+            padding: 5px;
+            display: none;
+            cursor: pointer;
+            -webkit-transition-property: opacity, -webkit-filter;
+            transition-property: opacity, -webkit-filter;
+            transition-property: opacity, filter;
+            transition-property: opacity, filter, -webkit-filter;
+            -webkit-transition-duration: .15s;
+            transition-duration: .15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            font: inherit;
+            color: inherit;
+            text-transform: none;
+            background-color: transparent;
+            border: 0;
+            margin: 0;
+            overflow: visible
+        }
+
+        .hamburger.is-active:hover,
+        .hamburger:hover {
+            opacity: .7
+        }
+
+        .hamburger.is-active .hamburger-inner,
+        .hamburger.is-active .hamburger-inner:after,
+        .hamburger.is-active .hamburger-inner:before {
+            background-color: #fff
+        }
+
+        .hamburger-box {
+            width: 20px;
+            height: 16px;
+            display: inline-block;
+            position: relative
+        }
+
+        .hamburger-inner {
+            display: block;
+            top: 50%;
+            margin-top: -2px
+        }
+
+        .hamburger-inner,
+        .hamburger-inner:after,
+        .hamburger-inner:before {
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 2px;
+            position: absolute;
+            -webkit-transition-property: -webkit-transform;
+            transition-property: -webkit-transform;
+            transition-property: transform;
+            transition-property: transform, -webkit-transform;
+            -webkit-transition-duration: .15s;
+            transition-duration: .15s;
+            -webkit-transition-timing-function: ease;
+            transition-timing-function: ease
+        }
+
+        .hamburger-inner:after,
+        .hamburger-inner:before {
+            content: "";
+            display: block
+        }
+
+        .hamburger-inner:before {
+            top: -10px
+        }
+
+        .hamburger-inner:after {
+            bottom: -10px
+        }
+
+        .hamburger--squeeze .hamburger-inner {
+            -webkit-transition-duration: 75ms;
+            transition-duration: 75ms;
+            -webkit-transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+            transition-timing-function: cubic-bezier(.55, .055, .675, .19)
+        }
+
+        .hamburger--squeeze .hamburger-inner:before {
+            -webkit-transition: top 75ms ease .12s, opacity 75ms ease;
+            transition: top 75ms ease .12s, opacity 75ms ease
+        }
+
+        .hamburger--squeeze .hamburger-inner:after {
+            -webkit-transition: bottom 75ms ease .12s, -webkit-transform 75ms cubic-bezier(.55, .055, .675, .19);
+            transition: bottom 75ms ease .12s, -webkit-transform 75ms cubic-bezier(.55, .055, .675, .19);
+            transition: bottom 75ms ease .12s, transform 75ms cubic-bezier(.55, .055, .675, .19);
+            transition: bottom 75ms ease .12s, transform 75ms cubic-bezier(.55, .055, .675, .19), -webkit-transform 75ms cubic-bezier(.55, .055, .675, .19)
+        }
+
+        .hamburger--squeeze.is-active .hamburger-inner {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transition-delay: .12s;
+            transition-delay: .12s;
+            -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+            transition-timing-function: cubic-bezier(.215, .61, .355, 1)
+        }
+
+        .hamburger--squeeze.is-active .hamburger-inner:before {
+            top: 0;
+            opacity: 0;
+            -webkit-transition: top 75ms ease, opacity 75ms ease .12s;
+            transition: top 75ms ease, opacity 75ms ease .12s
+        }
+
+        .hamburger--squeeze.is-active .hamburger-inner:after {
+            bottom: 0;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            -webkit-transition: bottom 75ms ease, -webkit-transform 75ms cubic-bezier(.215, .61, .355, 1) .12s;
+            transition: bottom 75ms ease, -webkit-transform 75ms cubic-bezier(.215, .61, .355, 1) .12s;
+            transition: bottom 75ms ease, transform 75ms cubic-bezier(.215, .61, .355, 1) .12s;
+            transition: bottom 75ms ease, transform 75ms cubic-bezier(.215, .61, .355, 1) .12s, -webkit-transform 75ms cubic-bezier(.215, .61, .355, 1) .12s
+        }
+
+        @media (max-width:880px) {
+            .hamburger {
+                display: inline-block
+            }
+        }
+
+        .about-module--about--1wsIb {
+            min-height: 100vh;
+            background-image: url(./assets/images/about/about.png);
+            background-size: cover;
+            background-position: -5px -5px
+        }
+
+        .about-module--content---bsth {
+            padding: 7.1vh 0 0;
+            color: #002161
+        }
+
+        .about-module--aboutHeadline--3P7nX {
+            font-size: 33px;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 2.2vh
+        }
+
+        .about-module--hedlineContent--3y9Uf {
+            font-size: 18px;
+            line-height: 1.5
+        }
+
+        .about-module--one--Iw5Lv {
+            width: 83.6%;
+            margin-bottom: 5vh
+        }
+
+        .about-module--two--dH3fq {
+            padding-left: 26%
+        }
+
+        .about-module--titleTwo--2Afyv {
+            font-weight: 700;
+            margin-bottom: 1.7vh
+        }
+
+        .about-module--contentThree--ieQC3,
+        .about-module--contentTwo--3yWFy,
+        .about-module--titleTwo--2Afyv {
+            font-size: 18px;
+            line-height: 1.46
+        }
+
+        .about-module--contentTwo--3yWFy {
+            margin-bottom: 6vh
+        }
+
+        .about-module--titleThree--2eNde {
+            margin-bottom: 1.7vh
+        }
+
+        .about-module--heart--N1T33 {
+            vertical-align: top
+        }
+
+        @media (max-width:880px) {
+
+            .about-module--one--Iw5Lv,
+            .about-module--two--dH3fq {
+                padding: 0;
+                width: 100%
+            }
+        }
+
+        .cicrcles-module--circles--fgEOF {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 55px;
+            padding: 30px 0 0 4%
+        }
+
+        @media (max-width:880px) {
+            .cicrcles-module--circles--fgEOF {
+                padding: 0
+            }
+        }
+
+        .cicrcle-module--wrapper--8wQF4 {
+            padding: 20px
+        }
+
+        .cicrcle-module--circle--1BipW {
+            width: 112px;
+            height: 112px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            padding: 10%;
+            background-color: #fff;
+            position: relative
+        }
+
+        .cicrcle-module--inner--xBfxJ {
+            background-size: contain;
+            background: url(./assets/images/rotating.svg) #f05929;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .cicrcle-module--content--zEv4j {
+            font-size: 38px;
+            font-weight: 300;
+            line-height: .91;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
+        }
+
+        .cicrcle-module--label--mO-IB {
+            font-size: 18px;
+            line-height: 1.33;
+            color: #002161;
+            text-align: center;
+            margin-top: 10px
+        }
+
+        @-webkit-keyframes rotate {
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes rotate {
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        .inner {
+            -webkit-animation: rotate 4s linear infinite running;
+            animation: rotate 4s linear infinite running
+        }
+
+        .lAbout {
+            right: 10vw;
+            top: 4vh
+        }
+
+        .lAbout.animated {
+            -webkit-animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s;
+            animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s
+        }
+
+        .rAbout {
+            right: 6vw;
+            bottom: 18vh
+        }
+
+        .rAbout.animated {
+            -webkit-animation: floatX 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95);
+            animation: floatX 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95)
+        }
+
+        .mAbout {
+            right: 42vw;
+            bottom: 14vh
+        }
+
+        .mAbout.animated {
+            -webkit-animation: floatY 2.4s ease-in-out .9s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .9s;
+            animation: floatY 2.4s ease-in-out .9s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .9s
+        }
+
+        .member-module--wrapper--1MCXy {
+            margin: 30px 10px;
+            position: relative;
+            max-width: 210px
+        }
+
+        .member-module--circle--11YvP {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            padding: 5px;
+            background-color: #fff;
+            margin: 0 auto
+        }
+
+        .member-module--pic--EzFzO {
+            border-radius: 50%;
+            width: 200px;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%)
+        }
+
+        .member-module--content--2ht5R {
+            position: relative;
+            margin-top: 20px
+        }
+
+        .member-module--modalContent--23GVQ {
+            padding-left: 30px;
+            width: 60%
+        }
+
+        .member-module--name--3PNjP {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .member-module--twitter--KKm61 {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            color: #002161;
+            text-decoration: underline
+        }
+
+        .member-module--twitter--KKm61 svg {
+            margin: 0 5px 0 0
+        }
+
+        .member-module--bio--2si-h {
+            font-size: 16px;
+            line-height: 1.44;
+            text-align: center;
+        }
+
+        .member-module--longBio--2FR5L {
+            font-size: 16px;
+            line-height: 1.63;
+            margin-top: 30px
+        }
+
+        .member-module--button--3tjqf {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            position: absolute;
+            z-index: 8;
+            right: 0;
+            top: 218px;
+            cursor: pointer;
+            margin: 4px
+        }
+
+        @media (max-width:880px) {
+            .member-module--wrapper--1MCXy {
+                width: 50%
+            }
+        }
+
+        @media (max-width:580px) {
+            .member-module--wrapper--1MCXy {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center
+            }
+
+            .member-module--modalContent--23GVQ {
+                padding: 10px;
+                width: 100%
+            }
+        }
+
+        .modal-module--modalMain--2Jn6H {
+            background: #fff;
+            background-size: contain;
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            left: 50%;
+            width: 88vw;
+            max-width: 860px;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            display: flex;
+            flex-wrap: wrap;
+            padding: 6vh 7%;
+            max-height: 80vh;
+            overflow-y: auto
+        }
+
+        .modal-module--block--3EQcK .modal-module--modalMain--2Jn6H {
+            z-index: 299
+        }
+
+        .modal-module--overlay--2WYpq {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, .3);
+            z-index: 199
+        }
+
+        .modal-module--block--3EQcK {
+            display: block
+        }
+
+        .modal-module--none--3MMBM {
+            display: none
+        }
+
+        .modal-module--close--16iAO {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            cursor: pointer
+        }
+
+        .advisoryBoard-module--section--3BayO {
+            z-index: 99
+        }
+
+        .advisoryBoard-module--wrapper--3zUaM {
+            color: #002161;
+            padding: 20px 0;
+            max-width: 960px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around
+        }
+
+        .advisoryBoard-module--title--6pKgJ {
+            padding: 40px 0;
+            font-size: 33px;
+            font-weight: 900;
+            line-height: 1.2
+        }
+
+        .wrapper {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0
+        }
+
+        .circleA {
+            left: 3%;
+            top: 10%
+        }
+
+        .circleA.animated {
+            -webkit-animation: floatY 3.22s ease-in-out .1s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .1s;
+            animation: floatY 3.22s ease-in-out .1s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .1s
+        }
+
+        .blA {
+            left: 110px;
+            bottom: 14vh
+        }
+
+        .blA.animated {
+            -webkit-animation: floatXY 3s ease-in .5s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .5s;
+            animation: floatXY 3s ease-in .5s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .5s
+        }
+
+        .tmA {
+            right: 14vw;
+            top: 22%
+        }
+
+        .tmA.animated {
+            -webkit-animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s;
+            animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s
+        }
+
+        .shape {
+            position: absolute;
+            -webkit-filter: drop-shadow(2px 2px 7px rgba(0, 0, 0, .15));
+            filter: drop-shadow(2px 2px 7px rgba(0, 0, 0, .15));
+            -webkit-transform: scale(0);
+            transform: scale(0)
+        }
+
+        @media (max-width:880px) {
+            .wrapper {
+                display: none
+            }
+        }
+
+        .venue-module--content--WgAfu {
+            font-size: 18px;
+            line-height: 1.46;
+            padding: 20px 0;
+            display: flex;
+            width: 60%
+        }
+
+        .venue-module--gallery--1bRLX {
+            padding: 20px 0
+        }
+
+        .venue-module--main--2yx2B {
+            width: 100%;
+            padding-bottom: 20px
+        }
+
+        .venue-module--grid--D3Fmc {
+            display: flex;
+            justify-content: space-between;
+            max-height: 188px
+        }
+
+        .venue-module--grid--D3Fmc img {
+            width: 31%;
+            box-sizing: border-box;
+            -o-object-fit: cover;
+            object-fit: cover
+        }
+
+        .venue-module--grid--D3Fmc .venue-module--last--38udk {
+            padding-right: 0
+        }
+
+        .venue-module--mapsWrapper--B-ehJ {
+            margin: 0 auto;
+            position: relative;
+            width: 100%;
+            height: 220px
+        }
+
+        @media (max-width:880px) {
+            .venue-module--grid--D3Fmc {
+                max-height: 145px
+            }
+        }
+
+        .rV {
+            left: 100px;
+            bottom: 38vh
+        }
+
+        .rV.animated {
+            -webkit-animation: floatY 2.22s ease-in-out .5s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .1s;
+            animation: floatY 2.22s ease-in-out .5s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .1s
+        }
+
+        .lV {
+            right: 24vw;
+            top: 5vh
+        }
+
+        .lV.animated {
+            -webkit-animation: floatXY 3s ease-in .5s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .5s;
+            animation: floatXY 3s ease-in .5s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .5s
+        }
+
+        .wcA {
+            position: absolute;
+            right: 5px;
+            top: 17vh
+        }
+
+        .wcA.animated {
+            -webkit-animation: floatXY 2.7s ease-in .3s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .3s;
+            animation: floatXY 2.7s ease-in .3s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .3s
+        }
+
+        .tickets-module--tickets--1MDRB {
+            background-size: cover;
+            background-position: 0 0
+        }
+
+        .tickets-module--content--IjNW6 {
+            font-size: 18px;
+            line-height: 1.46;
+            width: 60%;
+            color: #002161
+        }
+
+        .tickets-module--ticWrapper--vStOl {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 46px 0 10px
+        }
+
+        .tickets-module--vat--18F09 {
+            color: #002161;
+            font-size: 13px;
+            padding-bottom: 30px
+        }
+
+        .ticket-module--card--Ok2s9 {
+            height: auto;
+            margin: 10px;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            padding: 15px 30px 42px 20px;
+            color: #002161;
+            width: 100%;
+            max-height: unset;
+            position: relative;
+            background-position: 8% top
+        }
+
+        .ticket-module--soon--2ivZI.ticket-module--card--Ok2s9 {
+            max-height: 100px;
+            width: 100%;
+            background-color: #fff !important;
+            padding: 0 20px
+        }
+
+        .ticket-module--cardInner--o_CVS {
+            display: block
+        }
+
+        .ticket-module--soon--2ivZI .ticket-module--cardInner--o_CVS {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100px
+        }
+
+        .ticket-module--type--1aFoN {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.59;
+            text-align: left
+        }
+
+        .ticket-module--wrapper--1rRGj {
+            width: 300px
+        }
+
+        .ticket-module--price--2z5Bo {
+            font-size: 57px;
+            font-weight: 700;
+            line-height: 1.57;
+            text-align: left;
+            margin-bottom: 16px
+        }
+
+        .ticket-module--soon--2ivZI .ticket-module--price--2z5Bo {
+            margin: 0 auto 0 0
+        }
+
+        .ticket-module--price--2z5Bo small {
+            font-size: 40px
+        }
+
+        .ticket-module--price--2z5Bo sup {
+            vertical-align: super;
+            font-size: 16px
+        }
+
+        .ticket-module--soon--2ivZI .ticket-module--des--1a8Wk {
+            font-size: 13px;
+            line-height: 1.5
+        }
+
+        .ticket-module--button--2PiTF {
+            width: 98px;
+            height: 38px;
+            border-radius: 20px;
+            background-color: #002161;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 12px 0;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            bottom: 20px;
+            right: 20px
+        }
+
+        .ticket-module--soon--2ivZI .ticket-module--button--2PiTF {
+            background-color: #002161;
+            position: static;
+            /* cursor: auto */
+        }
+
+        .ticket-module--soon--2ivZI {
+            color: #002161
+        }
+
+        @media (max-width:880px) {
+            .ticket-module--card--Ok2s9 {
+                width: 100%;
+                margin: 10px 0
+            }
+
+            .ticket-module--soon--2ivZI.ticket-module--card--Ok2s9 {
+                padding: 0 12px
+            }
+
+            .ticket-module--soon--2ivZI .ticket-module--cardInner--o_CVS {
+                position: relative
+            }
+
+            .ticket-module--price--2z5Bo {
+                font-size: 36px
+            }
+
+            .ticket-module--soon--2ivZI .ticket-module--price--2z5Bo {
+                font-size: 28px;
+                position: absolute;
+                right: 0;
+                top: 0
+            }
+
+            .ticket-module--soon--2ivZI .ticket-module--button--2PiTF {
+                position: absolute;
+                right: 0;
+                bottom: 16px;
+                height: 33px;
+                padding: 9px 0
+            }
+
+            .ticket-module--wrapper--1rRGj {
+                width: 160px
+            }
+
+            .ticket-module--price--2z5Bo small {
+                font-size: 20px
+            }
+        }
+
+        .lT {
+            left: 8vw;
+            bottom: 52vh
+        }
+
+        .lT.animated {
+            -webkit-animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s;
+            animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s
+        }
+
+        .rT {
+            right: 2vw;
+            top: 8vh
+        }
+
+        .rT.animated {
+            -webkit-animation: floatX 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95);
+            animation: floatX 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95)
+        }
+
+        .mT {
+            right: 22vw;
+            top: 0
+        }
+
+        .mT.animated {
+            -webkit-animation: floatY 2.4s ease-in-out .9s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .9s;
+            animation: floatY 2.4s ease-in-out .9s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .9s
+        }
+
+        .shape {
+            -webkit-transform: perspective(300px);
+            transform: perspective(300px)
+        }
+
+        .programme-module--programme--vEOkW {
+            min-height: 100vh
+        }
+
+        .programme-module--tabs--3MVoK {
+            width: 140%;
+            margin-left: -20%;
+            margin-top: 40px;
+            height: 68px;
+            display: flex;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+            overflow: hidden
+        }
+
+        .programme-module--tab--ERoWu {
+            font-size: 28px;
+            line-height: 1.22;
+            color: #c6c6c6;
+            border: 0;
+            background: #fff;
+            position: relative;
+            display: block;
+            cursor: pointer
+        }
+
+        .programme-module--tab--ERoWu p {
+            padding: 0 16px
+        }
+
+        .programme-module--active--1qonv p {
+            -webkit-transform: skew(-45deg);
+            transform: skew(-45deg)
+        }
+
+        .programme-module--active--1qonv {
+            outline: 0;
+            color: #fff;
+            background: #2199e3;
+            -webkit-transform: skew(45deg);
+            transform: skew(45deg);
+            z-index: 9
+        }
+
+        .programme-module--tab--ERoWu:first-child {
+            margin-left: -4%;
+            width: 54%
+        }
+
+        .programme-module--tab--ERoWu:nth-child(2) {
+            margin-right: -4%;
+            width: 54%
+        }
+
+        .programme-module--tabsContent--1ZdU4 {
+            width: 140%;
+            margin-left: -20%;
+            color: #002161
+        }
+
+        .programme-module--tableWrapper--19r04 {
+            overflow-x: auto;
+            width: 100%
+        }
+
+        .programme-module--tableWrapper--19r04 table {
+            width: 100%
+        }
+
+        @media (max-width:1200px) {
+
+            .programme-module--tabs--3MVoK,
+            .programme-module--tabsContent--1ZdU4 {
+                width: 100%;
+                margin-left: 0
+            }
+        }
+
+        @media (max-width:880px) {
+            .programme-module--tab--ERoWu:first-child {
+                padding-left: 10%;
+                margin-left: -10%;
+                width: 60%
+            }
+
+            .programme-module--tab--ERoWu:nth-child(2) {
+                margin-right: -10%;
+                padding-right: 10%;
+                width: 60%
+            }
+
+            .programme-module--tabs--3MVoK p {
+                font-size: 18px
+            }
+        }
+
+        .ltProg {
+            left: -5%;
+            top: 14%;
+            width: 160px
+        }
+
+        .ltProg.animated {
+            -webkit-animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .72s cubic-bezier(.8, .01, .31, 1.95) .7s;
+            animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .72s cubic-bezier(.8, .01, .31, 1.95) .7s
+        }
+
+        .cirProg {
+            right: 3%;
+            top: 19%;
+            width: 130px
+        }
+
+        .cirProg.animated {
+            -webkit-animation: floatX 2.8s ease-in-out infinite alternate, pop .8s cubic-bezier(.8, .01, .31, 1.95);
+            animation: floatX 2.8s ease-in-out infinite alternate, pop .8s cubic-bezier(.8, .01, .31, 1.95)
+        }
+
+        .cirWhiteProg {
+            right: 50%;
+            top: 35%;
+            width: 140px
+        }
+
+        .cirWhiteProg.animated {
+            -webkit-animation: floatX 2.2s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95);
+            animation: floatX 2.2s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95)
+        }
+
+        .lmProg {
+            right: 28%;
+            bottom: 8%
+        }
+
+        .lmProg.animated {
+            -webkit-animation: floatXY 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95);
+            animation: floatXY 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95)
+        }
+
+        .programItem-module--time--2b4O5 {
+            font-size: 21px;
+            font-weight: 300;
+            line-height: 1.38
+        }
+
+        .programItem-module--type--J3j3X {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.61;
+            text-transform: uppercase
+        }
+
+        .programItem-module--top--MMioU {
+            display: flex;
+            padding-bottom: 20px
+        }
+
+        .programItem-module--top--MMioU img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 40px
+        }
+
+        .programItem-module--top--MMioU span:first-child {
+            font-size: 18px;
+            padding-right: 22px;
+            font-weight: 500
+        }
+
+        .programItem-module--top--MMioU a {
+            font-size: 13px;
+            color: #002161;
+            text-decoration: underline
+        }
+
+        .programItem-module--middle--22Hax div {
+            padding: 16px 0 0 16px
+        }
+
+        .programItem-module--bottom--cnJ71 {
+            padding-top: 20px
+        }
+
+        .programItem-module--bottom--cnJ71>p:first-of-type {
+            font-weight: 500
+        }
+
+        .programItem-module--bottom--cnJ71>p:nth-of-type(2) {
+            padding: 16px 0 0 16px
+        }
+
+        .programItem-module--title--2PWIR {
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 1.38
+        }
+
+        .programItem-module--beginner--25HOf {
+            color: #2199e3
+        }
+
+        .programItem-module--advanced--1yAfY {
+            color: #f05929
+        }
+
+        .programItem-module--modalContent--5U4wc {
+            color: #002161;
+            font-size: 16px;
+            line-height: 1.63
+        }
+
+        .programItem-module--button--2j0ae {
+            cursor: pointer;
+            position: absolute;
+            right: 40px;
+            top: 35%
+        }
+
+        .programItem-module--advanced--1yAfY,
+        .programItem-module--beginner--25HOf {
+            padding-right: 80px
+        }
+
+        td {
+            padding: 40px 40px 0 0;
+            position: relative;
+            max-width: 400px
+        }
+
+        @media (max-width:880px) {
+            tr {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0
+            }
+
+            td {
+                padding: 10px 0 0;
+                max-width: none
+            }
+
+            .programItem-module--title--2PWIR {
+                font-size: 18px
+            }
+
+            .programItem-module--time--2b4O5 {
+                font-size: 24px
+            }
+        }
+
+        .card-module--wrapper--npptq {
+            margin: 30px 10px;
+            position: relative;
+            width: calc(25% - 20px)
+        }
+
+        .card-module--smallWrapper--1pAgN {
+            display: flex;
+            align-items: center;
+            margin: 18px 0
+        }
+
+        .card-module--circle--2q_H_ {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            padding: 5px;
+            background-color: #fff;
+            margin: 0 auto
+        }
+
+        .card-module--smallCircle--1Q2rc {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            flex-shrink: 0
+        }
+
+        .card-module--modalCircle--1T-Wv {
+            width: 210px;
+            height: 210px
+        }
+
+        .card-module--pic--3CG8B {
+            border-radius: 50%;
+            width: 150px
+        }
+
+        .card-module--modalPic--2nUz- {
+            width: 200px
+        }
+
+        .card-module--content--cvyoP {
+            position: relative;
+            margin: 20px auto 0;
+            max-width: 190px
+        }
+
+        .card-module--smallContent--QfC_J {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.28;
+            padding-left: 18px
+        }
+
+        .card-module--smallContent--QfC_J :nth-of-type(2) {
+            font-size: 16px
+        }
+
+        .card-module--modalContent--famXJ {
+            padding-left: 30px;
+            width: 60%
+        }
+
+        .card-module--name--3Hz77 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 4px;
+            padding-right: 50px
+        }
+
+        .card-module--level--1r-ae {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            padding-right: 50px
+        }
+
+        .card-module--topic--2L3Cs {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 5px;
+            padding-right: 20px
+        }
+
+        .card-module--twitter--7EE66 {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            color: #002161;
+            text-decoration: underline;
+            padding: 5px 0 18px
+        }
+
+        .card-module--twitter--7EE66 svg {
+            margin: 0 5px 0 0
+        }
+
+        .card-module--bio--bT9F6 {
+            font-size: 13px;
+            line-height: 1.44;
+            margin-top: 6px
+        }
+
+        .card-module--longBio--1tYrN {
+            font-size: 16px;
+            line-height: 1.63;
+            margin-top: 30px
+        }
+
+        .card-module--button--rRymo {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            position: absolute;
+            z-index: 8;
+            right: -5px;
+            top: -11px;
+            cursor: pointer;
+            margin: 4px
+        }
+
+        @media (max-width:880px) {
+            .card-module--wrapper--npptq {
+                width: calc(50% - 20px)
+            }
+
+            .card-module--smallWrapper--1pAgN {
+                margin: 10px 0 0
+            }
+        }
+
+        @media (max-width:580px) {
+            .card-module--wrapper--npptq {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center
+            }
+
+            .card-module--modalContent--famXJ {
+                padding: 10px;
+                width: 100%
+            }
+        }
+
+        .qas-module--content--x16ta {
+            font-size: 18px;
+            line-height: 1.46;
+            padding: 20px 0
+        }
+
+        .qas-module--ticWrapper--1GOkJ {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 0
+        }
+
+        .qas-module--qas--1KRJl {
+            background-image: url(./assets/images/faq/Q&A.svg);
+            background-size: cover;
+            min-height: 100vh;
+            background-position: bottom;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15)
+        }
+
+        .qa-module--wrapper--19x1C * {
+            box-sizing: border-box
+        }
+
+        .qa-module--wrapper--19x1C {
+            box-sizing: border-box;
+            width: 50%;
+            margin: 5px 0
+        }
+
+        .qa-module--qa--1iUDL {
+            position: relative
+        }
+
+        .qa-module--question--D1JfX {
+            display: flex;
+            align-items: center;
+            line-height: 1.5
+        }
+
+        .qa-module--questionCopy--3mvt3 {
+            font-size: 18px;
+            line-height: 1.46;
+            padding: 10px 0
+        }
+
+        .qa-module--answer--21GVq {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 1.44
+        }
+
+        .qa-module--btnOpen--3t3X0 {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            line-height: 1.5
+        }
+
+        .qa-module--btnOpen--3t3X0 p {
+            font-size: 16px;
+            line-height: 1.46;
+            padding-left: 8px;
+            text-align: left
+        }
+
+        .qa-module--btnOpen--3t3X0:focus {
+            outline: none
+        }
+
+        .qa-module--btnClose--1K0gf {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background-image: none;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            cursor: pointer
+        }
+
+        .qa-module--popup--Ad3hU {
+            position: relative;
+            top: -52px;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            background-color: #f05929;
+            color: #fff;
+            overflow: hidden;
+            padding: 5px 48px 15px;
+            width: 98%
+        }
+
+        .qa-module--popup--Ad3hU a {
+            color: #002161
+        }
+
+        .qa-module--close--a_atQ .qa-module--popup--Ad3hU {
+            z-index: -1;
+            opacity: 0;
+            max-height: 0
+        }
+
+        .qa-module--open--specL .qa-module--popup--Ad3hU {
+            z-index: 1;
+            opacity: 1;
+            -webkit-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+            max-height: 200px;
+            margin-bottom: -52px
+        }
+
+        @media (max-width:880px) {
+            .qa-module--wrapper--19x1C {
+                width: 100%
+            }
+        }
+
+        .lF {
+            left: 4vw;
+            bottom: 8vh
+        }
+
+        .lF.animated {
+            -webkit-animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s;
+            animation: floatY 2.5s ease-in-out .7s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .7s
+        }
+
+        .mF {
+            right: 45vw;
+            top: 10%
+        }
+
+        .mF.animated {
+            -webkit-animation: floatY 2.4s ease-in-out .9s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .9s;
+            animation: floatY 2.4s ease-in-out .9s infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95) .9s
+        }
+
+        .rF {
+            right: 10vw;
+            top: 3vh
+        }
+
+        .rF.animated {
+            -webkit-animation: floatX 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95);
+            animation: floatX 2.8s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95)
+        }
+
+        .speakers-module--speakers--lNECO {
+            color: #002161;
+            background-color: #ebebec;
+            min-height: 100vh
+        }
+
+        .speakers-module--speakersWrapper--SYgHi {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around
+        }
+
+        .speakers-module--big--g0Y8X {
+            font-size: 24px;
+            margin-top: 40px
+        }
+
+        .speakers-module--wrapper--2rRg1 {
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            color: #002161
+        }
+
+        .speakers-module--content--xVr07 {
+            font-size: 18px;
+            line-height: 1.46;
+            width: 100%;
+            color: #002161
+        }
+
+        @media (max-width:880px) {
+            .speakers-module--content--xVr07 {
+                width: 100%
+            }
+        }
+
+        .sponsors-module--sponsors--2MFmU {
+            background-size: cover;
+            background-image: url(./assets/images/sponsors.svg);
+            background-position: 0 0;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15)
+        }
+
+        .sponsors-module--content--3mJOW {
+            font-size: 18px;
+            line-height: 1.46
+        }
+
+        .sponsors-module--spWrapper--207aI {
+            color: #002161;
+            margin-top: 4vh
+        }
+
+        .sponsors-module--row3--3DECC {
+            display: flex;
+            justify-content: space-between
+        }
+
+        .sponsors-module--row--1Ifbm {
+            padding: 24px 0
+        }
+
+        @media (max-width:880px) {
+            .sponsors-module--row3--3DECC {
+                display: block
+            }
+
+            .sponsors-module--row--1Ifbm {
+                padding: 0
+            }
+        }
+
+        .sponsor-module--card--265Ho {
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            width: 31.6%;
+            position: relative;
+            padding-bottom: 80px;
+            min-height: 440px;
+            background: #fff
+        }
+
+        .sponsor-module--platinum--FCTPx.sponsor-module--card--265Ho {
+            display: flex;
+            width: 100%;
+            padding-bottom: 0;
+            min-height: 215px
+        }
+
+        .sponsor-module--popular--1womP {
+            position: absolute;
+            width: 100%;
+            background-color: #002161;
+            color: #fff;
+            height: 20px;
+            left: 0;
+            bottom: 0;
+            text-transform: lowercase;
+            font-size: 12px;
+            padding: 3px 20px
+        }
+
+        .sponsor-module--title--2c5WL {
+            height: 100px;
+            font-size: 33px;
+            padding: 30px 20px;
+            line-height: 1.18;
+            text-transform: capitalize;
+            min-width: 228px;
+            position: relative
+        }
+
+        .sponsor-module--platinum--FCTPx .sponsor-module--title--2c5WL {
+            height: auto;
+            display: flex;
+            align-items: center
+        }
+
+        .sponsor-module--title--2c5WL h1 {
+            font-weight: 400
+        }
+
+        .sponsor-module--body--c15WR {
+            padding: 30px 20px 0 40px;
+            font-size: 13px;
+            line-height: 1.44;
+            flex: 1 1
+        }
+
+        .sponsor-module--body--c15WR p {
+            padding-bottom: 2px
+        }
+
+        .sponsor-module--list--3W9UX {
+            line-height: 1.2
+        }
+
+        .sponsor-module--platinum--FCTPx .sponsor-module--list--3W9UX {
+            padding-bottom: 30px
+        }
+
+        .sponsor-module--list--3W9UX ul {
+            list-style: disc
+        }
+
+        .sponsor-module--selectButton--2Y4_5 {
+            width: 100px;
+            height: 40px;
+            font-size: 13px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            position: absolute;
+            right: 0;
+            bottom: 0
+        }
+
+        .sponsor-module--card--265Ho:after {
+            content: "";
+            display: block;
+            clear: both
+        }
+
+        .sponsor-module--buttonWrapper--Wx1Oe {
+            font-size: 18px;
+            line-height: 1.46;
+            padding: 60px 20px 20px;
+            margin-left: auto;
+            flex: 1 1
+        }
+
+        @media (max-width:880px) {
+            .sponsor-module--card--265Ho {
+                width: 320px;
+                margin: 25px auto
+            }
+
+            .sponsor-module--platinum--FCTPx.sponsor-module--card--265Ho {
+                display: block;
+                width: 320px
+            }
+
+            .sponsor-module--platinum--FCTPx .sponsor-module--selectButton--2Y4_5 {
+                bottom: 70px
+            }
+
+            .sponsor-module--card--265Ho:nth-child(2) {
+                margin-top: 60px
+            }
+
+            .sponsor-module--selectButton--2Y4_5 {
+                right: 30px
+            }
+        }
+
+        .real-sponsors-module--realSponsors--1Dd1h {
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            background-size: cover;
+            background-image: url(./assets/images/sponsors.svg);
+            background-position: 100% 100%
+        }
+
+        .real-sponsors-module--spWrapper--1ugXm {
+            color: #002161;
+            margin-top: 4vh
+        }
+
+        .real-sponsors-module--spWrapper--1ugXm h2 {
+            height: 90px;
+            font-size: 33px;
+            padding: 25px 20px;
+            line-height: 1.18;
+            text-transform: capitalize;
+            min-width: 228px;
+            font-weight: 400;
+            max-width: 300px
+        }
+
+        .real-sponsors-module--spWrapper--1ugXm figcaption {
+            padding: 10px 0;
+            text-align: center;
+            font-size: 22px
+        }
+
+        .real-sponsors-module--spWrapper--1ugXm img {
+            max-width: 100%;
+            padding: 10px 15px;
+            max-height: 100px
+        }
+
+        .real-sponsors-module--row--3axPn {
+            display: flex;
+            padding: 0 0 4vmin;
+            align-items: center
+        }
+
+        .real-sponsors-module--gold--3Q0wU {
+            width: 25%
+        }
+
+        @media (max-width:880px) {
+            .real-sponsors-module--row--3axPn {
+                display: flex;
+                flex-wrap: wrap
+            }
+
+            .real-sponsors-module--spWrapper--1ugXm h2 {
+                max-width: none;
+                width: 100%
+            }
+
+            .real-sponsors-module--spWrapper--1ugXm img {
+                padding: 20px 30px
+            }
+
+            .real-sponsors-module--gold--3Q0wU {
+                width: 50%
+            }
+        }
+
+        .organisers-module--organiser--3gSLU {
+            min-height: 100vh
+        }
+
+        .organisers-module--wrapper--1IXda {
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            color: #002161
+        }
+
+        .organisers-module--content--UElyQ {
+            font-size: 18px;
+            line-height: 1.46;
+            width: 80%;
+            color: #002161
+        }
+
+        .organisers-module--powered--V710T {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 30px
+        }
+
+        .organisers-module--powered--V710T>p {
+            padding-bottom: 30px
+        }
+
+        .organisers-module--powered--V710T img {
+            max-width: 300px;
+            width: 100%
+        }
+
+        .organisers-module--powered--V710T a {
+            display: inline-block;
+            margin-left: 30px
+        }
+
+        .footer-module--footer--3zCYC {
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            min-height: 8vh
+        }
+
+        .footer-module--inner--31OX_ {
+            display: flex;
+            justify-content: space-between
+        }
+
+        .footer-module--nav--1m83O,
+        .footer-module--nav--1m83O ul {
+            display: flex
+        }
+
+        .footer-module--nav--1m83O a {
+            font-size: 11px;
+            line-height: 1.77;
+            text-align: left;
+            color: #002161;
+            padding-right: 10px;
+            text-decoration: none;
+            cursor: pointer
+        }
+
+        .footer-module--rights--2haJQ {
+            font-size: 11px;
+            color: #002161
+        }
+
+        .footer-module--disclaimer--2a9WR {
+            font-size: 11px;
+            color: #002161;
+            padding: 0 20% 20px
+        }
+
+        @media (max-width:880px) {
+            .footer-module--nav--1m83O ul {
+                display: block
+            }
+
+            ul.footer-module--social--1wDJr {
+                display: flex
+            }
+        }
+
+        .index-module--wrapper--1yE-i {
+            background-image: url(./assets/images/background-3.svg);
+            background-size: cover;
+            background-position: top
+        }
+
+        .backToTop-module--button--xt8Id {
+            width: 45px;
+            height: 45px;
+            font-weight: 700;
+            position: fixed;
+            bottom: 20px;
+            right: 15px;
+            z-index: 98;
+            border: none;
+            outline: none;
+            background-color: #f05929;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 22px;
+            text-transform: uppercase;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15)
+        }
+
+        @media (max-width:880px) {
+            .backToTop-module--button--xt8Id {
+                right: 5px;
+                bottom: 15px;
+                padding: 10px 8px
+            }
+        }
+
+        .scroll-module--scrollWrapper--DUxkM {
+            width: 100%;
+            height: 4px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #ebebec;
+            z-index: 99
+        }
+
+        .scroll-module--inner--3vXBT {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 4px;
+            background-color: #f05929
+        }
+
+        .newsletter-module--content--OuzYK {
+            font-size: 18px;
+            line-height: 1.46;
+            padding: 20px 20%
+        }
+
+        .newsletter-module--formWrapper--2WzsV {
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        .newsletter-module--join--2rlBO {
+            font-size: 24px;
+            line-height: 1.5;
+            width: 70%;
+            margin-bottom: 5vh;
+            color: #002161
+        }
+
+        .newsletter-module--button--2RTB8 {
+            height: 40px;
+            font-size: 15px;
+            width: 200px
+        }
+
+        button:disabled {
+            opacity: .4
+        }
+
+        .newsletter-module--inputText--2dnkl {
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .15);
+            padding: 0 5%;
+            margin: 12px 0
+        }
+
+        .newsletter-module--checkbox--2Bt_w {
+            display: block;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 1.04;
+            text-align: left;
+            color: #002161;
+            margin: 10px 0
+        }
+
+        .newsletter-module--privacy--34YYD,
+        .newsletter-module--privacy--34YYD a {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 1.42;
+            text-align: left;
+            color: #002161;
+            margin: 40px 0
+        }
+
+        .newsletter-module--error--1gPX7 {
+            color: #f05929;
+            position: relative;
+            font-size: 12px
+        }
+
+        @media all {
+            .newsletter-module--button--2RTB8 {
+                margin-top: 20px
+            }
+        }
+
+        .rbProg {
+            right: 15px;
+            top: 35%;
+            width: 140px
+        }
+
+        .rbProg.animated {
+            -webkit-animation: floatX 2.2s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95);
+            animation: floatX 2.2s ease-in-out infinite alternate, pop .82s cubic-bezier(.8, .01, .31, 1.95)
+        }
+
+        .lbProg {
+            left: 4%;
+            bottom: 18%
+        }
+
+        .lbProg.animated {
+            -webkit-animation: floatY 2.6s ease-in-out infinite alternate, pop .8s cubic-bezier(.8, .01, .31, 1.95);
+            animation: floatY 2.6s ease-in-out infinite alternate, pop .8s cubic-bezier(.8, .01, .31, 1.95)
+        }
+
+        /** 
+        * ===================================================================
+        * Added. scroll
+        * ------------------------------------------------------------------- 
+        */
+        
+        /* width */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #002161;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(204, 201, 201)204, 201, 201);
+        }
+    </style>
+    <meta name="generator" content="Gatsby 2.15.14" />
+    <title data-react-helmet="true">Flutter BootCamp 2020</title>
+    <meta data-react-helmet="true" name="description" content="Flutter BootCamp 2020" />
+    <meta data-react-helmet="true" property="og:url" content="https://flutter.ieeethapar.com/" />
+    <meta data-react-helmet="true" property="og:title" content="Flutter BootCamp 2020" />
+    <link as="script" rel="preload" href="./assets/js/webpack-runtime-4660d53d999b0c41fd8a.js" />
+    <link as="script" rel="preload" href="./assets/js/app-990fd211daeb423c981b.js" />
+    <link as="script" rel="preload" href="./assets/js/commons-914a461f227e27f3d482.js" />
+    <link as="script" rel="preload" href="./assets/js/styles-fcb43382a32f539c86e2.js" />
+    <link as="script" rel="preload" href="./assets/js/component---src-pages-index-js-bdeea8bfe048db461174.js" />
 </head>
 
 <body>
-    <header>
-        <nav class="header main-page transparent-light cart visible-lg visible-md" data-pages="header"
-            data-pages-header="autoresize" data-pages-resize-class="light">
-            <div class="container relative">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="pull-left sm-full-width">
-                            <a href="https://flutter.ieeethapar.com/" class="header-inner animated wow fadeInDown"
-                                data-wow-delay="0s">
-                                <img src="assets/images/logo.svg" class="logo">
-                                <img src="assets/images/logo.svg" class="alt">
-                            </a>
+    <div>
+        <div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper">
+            <div style="font-family:Roboto;background-size:cover;background-position:top center;width:100%">
+                <section class="hero-module--heroWrapper--22EMe">
+                    <div class="hero-module--hero--3c3vY">
+                        <div class="hero-module--heroDetails--1pNir">
+                            <h1 class="hero-module--heroHeadline--30Al3">Join us at Flutter BootCamp 2020!</h1>
+                            <p class="hero-module--heroTitle--2LQf3">January 14-15th, 2020 Thapar Institute, Patiala
+                            </p><a href="#tickets" target="_self" rel="noopener noreferrer"
+                                style="height:54px;width:300px" class="buton-module--bt--3Ud8d">
+                                <!-- -->Register Now</a>
                         </div>
-                    </div>
-                    <div class="col-md-9 col-sm-6 col-xs-6">
-                        <div class="pull-right z-index-10 index-info">
-                            <div class="visible-sm-inline visible-xs-inline menu-toggler pull-right"
-                                data-pages="header-toggle" data-pages-element="#header">
-                                <div class="one"></div>
-                                <div class="two"></div>
-                                <div class="three"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" menu-content clearfix" data-pages="menu-content" data-pages-direction="slideLeft"
-                        id="header">
-                        <div class="pull-left">
-                            <a href="#"
-                                class="text-black link padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10"
-                                data-pages="header-toggle" data-pages-element="#header"> <i class=" pg-close_line"></i>
-                            </a>
-                        </div>
-                        <div class="pull-center">
-                            <div class="pull-center-inner">
-                                <div class="header-inner">
-                                    <ul class="menu">
-                                        <li class="animated wow fadeInDown active" data-wow-delay="0s">
-                                            <a href="#about">About</a>
-                                        </li>
-                                        <li class="animated wow fadeInDown" data-wow-delay=".2s">
-                                            <a href="#speakers">Speaker</a>
-                                        </li>
-                                        <li class="animated wow fadeInDown" data-wow-delay=".3s">
-                                            <a href="#sponsors">Agenda</a>
-                                        </li>
-                                        <li class="animated wow fadeInDown" data-wow-delay=".4s">
-                                            <a href="#sponsors">Sponsors</a>
-                                        </li>
-                                        <li class="animated wow fadeInDown" data-wow-delay=".5s">
-                                            <a href="#venue">Venue</a>
-                                        </li>
-                                        <li class="animated wow fadeInDown" data-wow-delay=".6s">
-                                            <a href="#register"><strong>Register Now</strong></a>
-                                        </li>
-                                    </ul>
+                        <div class="hero-module--clock--HQg_X">
+                            <div class="countdown-module--round--3vrX2">
+                                <div class="countdown-module--display--37xxE">
+                                    <div>
+                                        <img src="./assets/images/flutter-logo.svg" width="200">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </nav>
-        <div class="header bg-header mob-cart  transparent-light main-header visible-xs visible-sm">
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a href="javascript:void(0);" class="visible-xs nav-togglebar pull-right"> <i
-                                class="fa fa-bars"></i></a>
-                        <a href="#"><img src="assets/images/logo.svg" class="logo-white"> </a>
-                        <a href="#" class=""><img src="assets/images/logo.svg" class="logo-big"> </a>
+                    <div>
+                        <div class="wrapperH"><img class="circle" src="./assets/images/circle.svg" alt="" /><img
+                                class="circleBlue" src="./assets/images/circle-blue.svg" alt="" /><img class="lb"
+                                src="./assets/images/lb.svg" alt="Flutter BootCamp 2020" /><img class="rb"
+                                src="./assets/images/rb.svg" alt="Flutter BootCamp 2020" /><img class="mb"
+                                src="./assets/images/mb.svg" alt="Flutter BootCamp 2020" /><img class="mt"
+                                src="./assets/images/mt.svg" alt="Flutter BootCamp 2020" /></div>
                     </div>
-                    <a href="javascript:void(0);" class="visible-sm nav-togglebar pull-right"> <i
-                            class="fa fa-bars"></i></a>
-                    <div class="navbar-collapse" id="navigation-collapse">
-                        <div class="visible-xs visible-sm clearfix mobile-header">
-                            <a href="#" class="icons icon-close nav-close"></a>
+                </section>
+                <section id="about" class="sectionWrapper about-module--about--1wsIb">
+                    <div class="innerWrapper">
+                        <div class="about-module--content---bsth">
+                            <div class="about-module--one--Iw5Lv">
+                                <h1 class="about-module--aboutHeadline--3P7nX">About BootCamp</h1>
+                                <p class="about-module--hedlineContent--3y9Uf">Flutter BootCamp is the one place to
+                                    explore new ideas & learn from Flutter experts. Join us for the event that brings
+                                    together technologists, executives, customers, partners & Key decision makers from
+                                    all industries. </p>
+                            </div>
+                            <div class="about-module--one--dH3fq">
+                                <h2 class="about-module--titleTwo--2Afyv">Only Flutter</h2>
+                                <p class="about-module--contentTwo--3yWFy">Whether you are new to Flutter or an
+                                    experienced user, Flutter BootCamp will give you inspiration & technical knowledge
+                                    for your software development journey. We have put together a mix of thought leaders
+                                    & Flutter experts to cover topics like Firebase Integration, App States, APIs and
+                                    play store deployment best practices. </p>
+                                <h3 class="about-module--titleThree--2eNde">The whole community in one place</h3>
+                                <p class="about-module--contentThree--ieQC3">The purpose of the bootcamp is to network,
+                                    share ideas & have meaningful conversations about how others are implementing
+                                    Flutter in their organizations and more</p>
+                            </div>
+                            <div class="cicrcles-module--circles--fgEOF">
+                                <div class="cicrcle-module--wrapper--8wQF4">
+                                    <div class="cicrcle-module--circle--1BipW">
+                                        <div class="cicrcle-module--inner--xBfxJ inner" style="animation-delay:445ms">
+                                        </div>
+                                        <div class="cicrcle-module--content--zEv4j">2</div>
+                                    </div>
+                                    <div class="cicrcle-module--label--mO-IB">days</div>
+                                </div>
+                                <div class="cicrcle-module--wrapper--8wQF4">
+                                    <div class="cicrcle-module--circle--1BipW">
+                                        <div class="cicrcle-module--inner--xBfxJ inner" style="animation-delay:0ms">
+                                        </div>
+                                        <div class="cicrcle-module--content--zEv4j">5+</div>
+                                    </div>
+                                    <div class="cicrcle-module--label--mO-IB">technologies</div>
+                                </div>
+                                <div class="cicrcle-module--wrapper--8wQF4">
+                                    <div class="cicrcle-module--circle--1BipW">
+                                        <div class="cicrcle-module--inner--xBfxJ inner" style="animation-delay:225ms">
+                                        </div>
+                                        <div class="cicrcle-module--content--zEv4j">2</div>
+                                    </div>
+                                    <div class="cicrcle-module--label--mO-IB">speakers</div>
+                                </div>
+                                <div class="cicrcle-module--wrapper--8wQF4">
+                                    <div class="cicrcle-module--circle--1BipW">
+                                        <div class="cicrcle-module--inner--xBfxJ inner" style="animation-delay:180ms">
+                                        </div>
+                                        <div class="cicrcle-module--content--zEv4j">10+</div>
+                                    </div>
+                                    <div class="cicrcle-module--label--mO-IB">hours</div>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="nav navbar-nav menu">
-
-                            <li class="animated wow fadeInDown active" data-wow-delay="0s">
-                                <a href="#about">About</a>
-                            </li>
-                            <li class="animated wow fadeInDown" data-wow-delay=".2s">
-                                <a href="#speakers">Speaker</a>
-                            </li>
-                            <li class="animated wow fadeInDown" data-wow-delay=".3s">
-                                <a href="#sponsors">Agenda</a>
-                            </li>
-                            <li class="animated wow fadeInDown" data-wow-delay=".4s">
-                                <a href="#sponsors">Sponsors</a>
-                            </li>
-                            <li class="animated wow fadeInDown" data-wow-delay=".5s">
-                                <a href="#venue">Venue</a>
-                            </li>
-                            <li class="animated wow fadeInDown" data-wow-delay=".6s">
-                                <a href="#register"><strong>Register Now</strong></a>
-                            </li>
-                        </ul>
                     </div>
-                </div>
-
-            </nav>
-        </div>
-    </header>
-
-    <section class="jumbotron main-page-info xs-full-height" id="about">
-        <div class="content content--canvas">
-            <div class="content__title">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center sm-text-center">
-                            <h1 class="sm-text-center">Join us at <br /><span class="all-caps">Flutter BootCamp</span>
-                            </h1>
-                            <p class="hint-text sm-text-center text-white">Flutter BootCamp is the one place to
-                                explore new ideas & learn from Flutter experts. Join us for the event that brings
-                                together technologists, executives, customers, partners & Key decision makers from all
-                                industries.</p>
-                            <h4 class="sm-text-center text-white p-b-10">
-                                <span class=""><img src="assets/images/001.png" style="width:40px">January 14-15,
-                                    2020</span>
-                                <span class="p-l-40"><img src="assets/images/002.png" style="width:50px"> Thapar
-                                    Institute, Patiala</span>
-                            </h4>
-                            <a href="#register" class="btn btn-primary">Register</a>
-
-                            <button class="btn btn-primary" type="button"
-                            onclick="window.location.href = 'https://chat.whatsapp.com/JhIzzC4zxOS0V2dX7aiW1r'">Join WhatsApp Group</button>                        </div>
+                    <div>
+                        <div class="wrapper"><img src="./assets/images/about/rt.svg" class="lAbout shape"
+                                alt="Flutter BootCamp 2020 shapes" /><img src="./assets/images/about/mb.svg"
+                                class="mAbout shape" alt="Flutter BootCamp 2020 shapes" /><img
+                                src="./assets/images/about/rb.svg" class="rAbout shape"
+                                alt="Flutter BootCamp 2020 shapes" /></div>
                     </div>
+                </section>
+                <div class="index-module--wrapper--1yE-i">
+                    <section id="advisory" class="sectionWrapper advisoryBoard-module--section--3BayO">
+                        <div class="innerWrapper">
+                            <h1 class="sectionTitle">Speakers & Facilitators</h1>
+                            <div class="advisoryBoard-module--wrapper--3zUaM">
+                                <div class="member-module--wrapper--1MCXy">
+                                    <div class="member-module--circle--11YvP"><img class="member-module--pic--EzFzO"
+                                            src="./assets/images/speakers/shivam.jpg" alt="Shivam Goyal" />
+                                    </div><button class="member-module--button--3tjqf"><i
+                                            class="fa fa-facebook"></i></button>
+                                    <div class="member-module--content--2ht5R">
+                                        <div class="member-module--name--3PNjP">Shivam Goyal</div>
+                                        <div class="member-module--bio--2si-h">
+                                            <p>
+                                                Flutter Dev | Enappd <br />
+                                                Lead | Script Chandigarh <br />
+                                                Google HashCode | AIR-33 <br />
+                                                <strong><a href="https://itsshivam.com/"
+                                                        target="_blank">itsshivam.com</a></strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-module--wrapper--1MCXy">
+                                    <div class="member-module--circle--11YvP"><img class="member-module--pic--EzFzO"
+                                            src="./assets/images/speakers/utkarsh.jpg" alt="Utkarsh Mishra" />
+                                    </div>
+                                    <div class="member-module--content--2ht5R">
+                                        <div class="member-module--name--3PNjP">Utkarsh Mishra</div>
+                                        <div class="member-module--bio--2si-h">
+                                            <p>
+                                                Blockchain Developer <br />
+                                                Genesis Hack Finalist <br />
+                                                TechHead @leadthapar <br />
+                                                <strong><a href="https://utkarshmishra.ml/"
+                                                        target="_blank">utkarshmishra.ml</a></strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper"><img src="./assets/images/adv/tl.svg" class="circleA shape"
+                                alt="Flutter BootCamp 2020 shapes" /><img src="./assets/images/adv/bl.svg"
+                                class="blA shape" alt="Flutter BootCamp 2020 shapes" /><img
+                                src="./assets/images/adv/tm.svg" class="tmA shape" alt="Flutter BootCamp 2020 shapes" />
+                        </div>
+                    </section>
+                    <section id="venue" class="sectionWrapper undefined">
+                        <div class="innerWrapper">
+                            <h1 class="sectionTitle">Venue</h1>
+                            <div class="venue-module--content--WgAfu">
+                                <p>We&#x27;re meeting in Learning Centre in Thapar Institute, Patiala.
+                                    <br />
+                                    Exact room number will be updated soon.
+                                </p>
+                            </div>
+                            <div class="venue-module--gallery--1bRLX"><img src="./assets/images/venue.jpg" alt=""
+                                    class="venue-module--main--2yx2B" />
+                            </div>
+                            <!-- <div class="venue-module--mapsWrapper--B-ehJ">
+                                <div>
+                                    <div style="position: absolute; width: 100%; height: 100%;">
+                                        <div
+                                            style="position: absolute; left: 0px; right: 0px; bottom: 0px; top: 0px; display: inherit; overflow: hidden;">
+                                            <div
+                                                style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                                <div class="gm-style"
+                                                    style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+                                                    <div tabindex="0"
+                                                        style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
+                                                        <div
+                                                            style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                            <div
+                                                                style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                    <div
+                                                                        style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -21, -179);">
+                                                                        <div
+                                                                            style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;">
+                                                            </div>
+                                                            <div
+                                                                style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;">
+                                                            </div>
+                                                            <div
+                                                                style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                                                                    <div
+                                                                        style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -21, -179);">
+                                                                        <div
+                                                                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;">
+                                                                        </div>
+                                                                        <div
+                                                                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;">
+                                                                        </div>
+                                                                        <div
+                                                                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;">
+                                                                        </div>
+                                                                        <div
+                                                                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;">
+                                                                        </div>
+                                                                        <div
+                                                                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;">
+                                                                        </div>
+                                                                        <div
+                                                                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;">
+                                                                        </div>
+                                                                        <div
+                                                                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;">
+                                                                        </div>
+                                                                        <div
+                                                                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: 11px; z-index: 54;">
+                                                                    <img alt=""
+                                                                        src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2_hdpi.png"
+                                                                        draggable="false"
+                                                                        style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                <div
+                                                                    style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -21, -179);">
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt=""
+                                                                            role="presentation"
+                                                                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i18298!3i10788!4i256!2m3!1e0!2sm!3i496209966!3m17!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmcuZnxwLnc6Mi4wMCxzLmU6Zy5zfHAuYzojZmY5YzljOWMscy5lOmwudHxwLnY6b24scy50OjV8cC5jOiNmZmYyZjJmMixzLnQ6NXxzLmU6Zy5mfHAuYzojZmZmZmZmZmYscy50OjgxfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6MnxwLnY6b2ZmLHMudDozfHAuczotMTAwfHAubDo0NSxzLnQ6M3xzLmU6Zy5mfHAuYzojZmZlZWVlZWUscy50OjN8cy5lOmwudC5mfHAuYzojZmY3YjdiN2Iscy50OjN8cy5lOmwudC5zfHAuYzojZmZmZmZmZmYscy50OjQ5fHAudjpzaW1wbGlmaWVkLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjR8cC52Om9mZixzLnQ6NnxwLmM6I2ZmNDZiY2VjfHAudjpvbixzLnQ6NnxzLmU6Zy5mfHAuYzojZmZjOGQ3ZDQscy50OjZ8cy5lOmwudC5mfHAuYzojZmYwNzA3MDcscy50OjZ8cy5lOmwudC5zfHAuYzojZmZmZmZmZmY!4e0!5m1!5f2&amp;key=AIzaSyBR9ZrsAcqAmaKMoy8UWitcj22Nn3D2lwM&amp;token=11818"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt=""
+                                                                            role="presentation"
+                                                                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i18297!3i10788!4i256!2m3!1e0!2sm!3i496210002!3m17!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmcuZnxwLnc6Mi4wMCxzLmU6Zy5zfHAuYzojZmY5YzljOWMscy5lOmwudHxwLnY6b24scy50OjV8cC5jOiNmZmYyZjJmMixzLnQ6NXxzLmU6Zy5mfHAuYzojZmZmZmZmZmYscy50OjgxfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6MnxwLnY6b2ZmLHMudDozfHAuczotMTAwfHAubDo0NSxzLnQ6M3xzLmU6Zy5mfHAuYzojZmZlZWVlZWUscy50OjN8cy5lOmwudC5mfHAuYzojZmY3YjdiN2Iscy50OjN8cy5lOmwudC5zfHAuYzojZmZmZmZmZmYscy50OjQ5fHAudjpzaW1wbGlmaWVkLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjR8cC52Om9mZixzLnQ6NnxwLmM6I2ZmNDZiY2VjfHAudjpvbixzLnQ6NnxzLmU6Zy5mfHAuYzojZmZjOGQ3ZDQscy50OjZ8cy5lOmwudC5mfHAuYzojZmYwNzA3MDcscy50OjZ8cy5lOmwudC5zfHAuYzojZmZmZmZmZmY!4e0!5m1!5f2&amp;key=AIzaSyBR9ZrsAcqAmaKMoy8UWitcj22Nn3D2lwM&amp;token=10855"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt=""
+                                                                            role="presentation"
+                                                                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i18297!3i10787!4i256!2m3!1e0!2sm!3i496210002!3m17!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmcuZnxwLnc6Mi4wMCxzLmU6Zy5zfHAuYzojZmY5YzljOWMscy5lOmwudHxwLnY6b24scy50OjV8cC5jOiNmZmYyZjJmMixzLnQ6NXxzLmU6Zy5mfHAuYzojZmZmZmZmZmYscy50OjgxfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6MnxwLnY6b2ZmLHMudDozfHAuczotMTAwfHAubDo0NSxzLnQ6M3xzLmU6Zy5mfHAuYzojZmZlZWVlZWUscy50OjN8cy5lOmwudC5mfHAuYzojZmY3YjdiN2Iscy50OjN8cy5lOmwudC5zfHAuYzojZmZmZmZmZmYscy50OjQ5fHAudjpzaW1wbGlmaWVkLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjR8cC52Om9mZixzLnQ6NnxwLmM6I2ZmNDZiY2VjfHAudjpvbixzLnQ6NnxzLmU6Zy5mfHAuYzojZmZjOGQ3ZDQscy50OjZ8cy5lOmwudC5mfHAuYzojZmYwNzA3MDcscy50OjZ8cy5lOmwudC5zfHAuYzojZmZmZmZmZmY!4e0!5m1!5f2&amp;key=AIzaSyBR9ZrsAcqAmaKMoy8UWitcj22Nn3D2lwM&amp;token=20949"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt=""
+                                                                            role="presentation"
+                                                                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i18298!3i10787!4i256!2m3!1e0!2sm!3i496209978!3m17!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmcuZnxwLnc6Mi4wMCxzLmU6Zy5zfHAuYzojZmY5YzljOWMscy5lOmwudHxwLnY6b24scy50OjV8cC5jOiNmZmYyZjJmMixzLnQ6NXxzLmU6Zy5mfHAuYzojZmZmZmZmZmYscy50OjgxfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6MnxwLnY6b2ZmLHMudDozfHAuczotMTAwfHAubDo0NSxzLnQ6M3xzLmU6Zy5mfHAuYzojZmZlZWVlZWUscy50OjN8cy5lOmwudC5mfHAuYzojZmY3YjdiN2Iscy50OjN8cy5lOmwudC5zfHAuYzojZmZmZmZmZmYscy50OjQ5fHAudjpzaW1wbGlmaWVkLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjR8cC52Om9mZixzLnQ6NnxwLmM6I2ZmNDZiY2VjfHAudjpvbixzLnQ6NnxzLmU6Zy5mfHAuYzojZmZjOGQ3ZDQscy50OjZ8cy5lOmwudC5mfHAuYzojZmYwNzA3MDcscy50OjZ8cy5lOmwudC5zfHAuYzojZmZmZmZmZmY!4e0!5m1!5f2&amp;key=AIzaSyBR9ZrsAcqAmaKMoy8UWitcj22Nn3D2lwM&amp;token=37943"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt=""
+                                                                            role="presentation"
+                                                                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i18299!3i10787!4i256!2m3!1e0!2sm!3i496209978!3m17!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmcuZnxwLnc6Mi4wMCxzLmU6Zy5zfHAuYzojZmY5YzljOWMscy5lOmwudHxwLnY6b24scy50OjV8cC5jOiNmZmYyZjJmMixzLnQ6NXxzLmU6Zy5mfHAuYzojZmZmZmZmZmYscy50OjgxfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6MnxwLnY6b2ZmLHMudDozfHAuczotMTAwfHAubDo0NSxzLnQ6M3xzLmU6Zy5mfHAuYzojZmZlZWVlZWUscy50OjN8cy5lOmwudC5mfHAuYzojZmY3YjdiN2Iscy50OjN8cy5lOmwudC5zfHAuYzojZmZmZmZmZmYscy50OjQ5fHAudjpzaW1wbGlmaWVkLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjR8cC52Om9mZixzLnQ6NnxwLmM6I2ZmNDZiY2VjfHAudjpvbixzLnQ6NnxzLmU6Zy5mfHAuYzojZmZjOGQ3ZDQscy50OjZ8cy5lOmwudC5mfHAuYzojZmYwNzA3MDcscy50OjZ8cy5lOmwudC5zfHAuYzojZmZmZmZmZmY!4e0!5m1!5f2&amp;key=AIzaSyBR9ZrsAcqAmaKMoy8UWitcj22Nn3D2lwM&amp;token=46403"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt=""
+                                                                            role="presentation"
+                                                                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i18299!3i10788!4i256!2m3!1e0!2sm!3i496209978!3m17!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmcuZnxwLnc6Mi4wMCxzLmU6Zy5zfHAuYzojZmY5YzljOWMscy5lOmwudHxwLnY6b24scy50OjV8cC5jOiNmZmYyZjJmMixzLnQ6NXxzLmU6Zy5mfHAuYzojZmZmZmZmZmYscy50OjgxfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6MnxwLnY6b2ZmLHMudDozfHAuczotMTAwfHAubDo0NSxzLnQ6M3xzLmU6Zy5mfHAuYzojZmZlZWVlZWUscy50OjN8cy5lOmwudC5mfHAuYzojZmY3YjdiN2Iscy50OjN8cy5lOmwudC5zfHAuYzojZmZmZmZmZmYscy50OjQ5fHAudjpzaW1wbGlmaWVkLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjR8cC52Om9mZixzLnQ6NnxwLmM6I2ZmNDZiY2VjfHAudjpvbixzLnQ6NnxzLmU6Zy5mfHAuYzojZmZjOGQ3ZDQscy50OjZ8cy5lOmwudC5mfHAuYzojZmYwNzA3MDcscy50OjZ8cy5lOmwudC5zfHAuYzojZmZmZmZmZmY!4e0!5m1!5f2&amp;key=AIzaSyBR9ZrsAcqAmaKMoy8UWitcj22Nn3D2lwM&amp;token=36309"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt=""
+                                                                            role="presentation"
+                                                                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i18296!3i10788!4i256!2m3!1e0!2sm!3i496210002!3m17!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmcuZnxwLnc6Mi4wMCxzLmU6Zy5zfHAuYzojZmY5YzljOWMscy5lOmwudHxwLnY6b24scy50OjV8cC5jOiNmZmYyZjJmMixzLnQ6NXxzLmU6Zy5mfHAuYzojZmZmZmZmZmYscy50OjgxfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6MnxwLnY6b2ZmLHMudDozfHAuczotMTAwfHAubDo0NSxzLnQ6M3xzLmU6Zy5mfHAuYzojZmZlZWVlZWUscy50OjN8cy5lOmwudC5mfHAuYzojZmY3YjdiN2Iscy50OjN8cy5lOmwudC5zfHAuYzojZmZmZmZmZmYscy50OjQ5fHAudjpzaW1wbGlmaWVkLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjR8cC52Om9mZixzLnQ6NnxwLmM6I2ZmNDZiY2VjfHAudjpvbixzLnQ6NnxzLmU6Zy5mfHAuYzojZmZjOGQ3ZDQscy50OjZ8cy5lOmwudC5mfHAuYzojZmYwNzA3MDcscy50OjZ8cy5lOmwudC5zfHAuYzojZmZmZmZmZmY!4e0!5m1!5f2&amp;key=AIzaSyBR9ZrsAcqAmaKMoy8UWitcj22Nn3D2lwM&amp;token=2395"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                        <img draggable="false" alt=""
+                                                                            role="presentation"
+                                                                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i15!2i18296!3i10787!4i256!2m3!1e0!2sm!3i496210002!3m17!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmcuZnxwLnc6Mi4wMCxzLmU6Zy5zfHAuYzojZmY5YzljOWMscy5lOmwudHxwLnY6b24scy50OjV8cC5jOiNmZmYyZjJmMixzLnQ6NXxzLmU6Zy5mfHAuYzojZmZmZmZmZmYscy50OjgxfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6MnxwLnY6b2ZmLHMudDozfHAuczotMTAwfHAubDo0NSxzLnQ6M3xzLmU6Zy5mfHAuYzojZmZlZWVlZWUscy50OjN8cy5lOmwudC5mfHAuYzojZmY3YjdiN2Iscy50OjN8cy5lOmwudC5zfHAuYzojZmZmZmZmZmYscy50OjQ5fHAudjpzaW1wbGlmaWVkLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjR8cC52Om9mZixzLnQ6NnxwLmM6I2ZmNDZiY2VjfHAudjpvbixzLnQ6NnxzLmU6Zy5mfHAuYzojZmZjOGQ3ZDQscy50OjZ8cy5lOmwudC5mfHAuYzojZmYwNzA3MDcscy50OjZ8cy5lOmwudC5zfHAuYzojZmZmZmZmZmY!4e0!5m1!5f2&amp;key=AIzaSyBR9ZrsAcqAmaKMoy8UWitcj22Nn3D2lwM&amp;token=12489"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gm-style-pbc"
+                                                            style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0; transition-duration: 0.8s;">
+                                                            <p class="gm-style-pbt">Use ctrl + scroll to zoom the map
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                                                            <div
+                                                                style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;">
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;">
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                                                                    <div
+                                                                        style="width: 27px; height: 43px; overflow: hidden; position: absolute; opacity: 0; left: -14px; top: 11px; z-index: 54;">
+                                                                        <img alt=""
+                                                                            src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2_hdpi.png"
+                                                                            draggable="false" usemap="#gmimap0"
+                                                                            style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;"><map
+                                                                            name="gmimap0" id="gmimap0"><area log="miw"
+                                                                                coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75"
+                                                                                shape="poly" title=""
+                                                                                style="cursor: pointer; touch-action: none;"></map>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;">
+                                                                    <div
+                                                                        style="cursor: default; position: absolute; top: 0px; left: 0px; z-index: -54;">
+                                                                        <div class="gm-style-iw-a"
+                                                                            style="position: absolute; left: 0px; top: 54px;">
+                                                                            <div class="gm-style-iw-t"
+                                                                                style="right: 0px; bottom: 54px;">
+                                                                                <div class="gm-style-iw gm-style-iw-c"
+                                                                                    style="padding-right: 0px; padding-bottom: 0px; max-width: 654px; max-height: 166px;">
+                                                                                    <div class="gm-style-iw-d"
+                                                                                        style="overflow: scroll; max-width: 636px; max-height: 148px;">
+                                                                                        <div>
+                                                                                            <div data-reactroot="">
+                                                                                                <h1
+                                                                                                    style="font-size:13px">
+                                                                                                    Copernicus Science
+                                                                                                    Centre</h1>
+                                                                                                <p>20 Wybrzeże
+                                                                                                    Kościuszkowskie st.,
+                                                                                                    00-390 Warsaw</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div><button draggable="false"
+                                                                                        title="Close" aria-label="Close"
+                                                                                        type="button"
+                                                                                        class="gm-ui-hover-effect"
+                                                                                        style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: -6px; right: -6px; width: 30px; height: 30px;"><img
+                                                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                                            style="pointer-events: none; display: block; width: 14px; height: 14px; margin: 8px;"></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><iframe aria-hidden="true" frameborder="0"
+                                                        style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"
+                                                        src="about:blank"></iframe>
+                                                    <div
+                                                        style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                                                        <a target="_blank" rel="noopener"
+                                                            href="https://maps.google.com/maps?ll=52.243269,21.02872&amp;z=15&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=apiv3"
+                                                            title="Open this area in Google Maps (opens a new window)"
+                                                            style="position: static; overflow: visible; float: none; display: inline;">
+                                                            <div style="width: 66px; height: 26px; cursor: pointer;">
+                                                                <img alt=""
+                                                                    src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5_hdpi.png"
+                                                                    draggable="false"
+                                                                    style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
+                                                            </div>
+                                                        </a></div>
+                                                    <div
+                                                        style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 290px; top: 20px;">
+                                                        <div
+                                                            style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">
+                                                            Map Data</div>
+                                                        <div style="font-size: 13px;">Map data ©2020 Google</div><button
+                                                            draggable="false" title="Close" aria-label="Close"
+                                                            type="button" class="gm-ui-hover-effect"
+                                                            style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"><img
+                                                                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button>
+                                                    </div>
+                                                    <div class="gmnoprint"
+                                                        style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 121px;">
+                                                        <div draggable="false" class="gm-style-cc"
+                                                            style="user-select: none; height: 14px; line-height: 14px;">
+                                                            <div
+                                                                style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                <div style="width: 1px;"></div>
+                                                                <div
+                                                                    style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                                <a
+                                                                    style="text-decoration: none; cursor: pointer; display: none;">Map
+                                                                    Data</a><span>Map data ©2020 Google</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gmnoscreen"
+                                                        style="position: absolute; right: 0px; bottom: 0px;">
+                                                        <div
+                                                            style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+                                                            Map data ©2020 Google</div>
+                                                    </div>
+                                                    <div class="gmnoprint gm-style-cc" draggable="false"
+                                                        style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;">
+                                                        <div
+                                                            style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                            <div style="width: 1px;"></div>
+                                                            <div
+                                                                style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                            <a href="https://www.google.com/intl/en_US/help/terms_maps.html"
+                                                                target="_blank" rel="noopener"
+                                                                style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms
+                                                                of Use</a></div>
+                                                    </div><button draggable="false" title="Toggle fullscreen view"
+                                                        aria-label="Toggle fullscreen view" type="button"
+                                                        class="gm-control-active gm-fullscreen-control"
+                                                        style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; display: none; top: 0px; right: 0px;"><img
+                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                            style="height: 18px; width: 18px;"><img
+                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                            style="height: 18px; width: 18px;"><img
+                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                            style="height: 18px; width: 18px;"></button>
+                                                    <div draggable="false" class="gm-style-cc"
+                                                        style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                                                        <div
+                                                            style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                            <div style="width: 1px;"></div>
+                                                            <div
+                                                                style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                            <a target="_blank" rel="noopener"
+                                                                title="Report errors in the road map or imagery to Google"
+                                                                href="https://www.google.com/maps/@52.243269,21.02872,15z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                                                                style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report
+                                                                a map error</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="wrapper"><img src="./assets/images/venue/r.svg" class="rV shape"
+                                alt="Flutter BootCamp 2020 shapes" /><img src="./assets/images/venue/l.svg"
+                                class="lV shape" alt="Flutter BootCamp 2020 shapes" /><img
+                                src="./assets/images/venue/wc.svg" class="wcA shape"
+                                alt="Flutter BootCamp 2020 shapes" /></div>
+                    </section>
+                    <section id="tickets" class="sectionWrapper tickets-module--tickets--1MDRB">
+                        <div class="innerWrapper">
+                            <h1 class="sectionTitle">Tickets</h1>
+                            <p class="tickets-module--content--IjNW6">Flutter BootCamp 2020 is completely free. Grab
+                                your tickets now.</p>
+                            <div class="tickets-module--ticWrapper--vStOl">
+                                <div class="ticket-module--card--Ok2s9 ticket-module--soon--2ivZI"
+                                    style="background:url('./assets/images/soon1.svg')">
+                                    <div class="ticket-module--cardInner--o_CVS">
+                                        <div class="ticket-module--wrapper--1rRGj">
+                                            <div class="ticket-module--type--1aFoN">14th January</div>
+                                            <div class="ticket-module--des--1a8Wk">Available</div>
+                                        </div><a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.townscript.com/v1/e/flutter-bootcamp/booking"
+                                            class="ticket-module--button--2PiTF">Book</a>
+                                    </div>
+                                </div>
+                                <div class="ticket-module--card--Ok2s9 ticket-module--soon--2ivZI"
+                                    style="background:url('./assets/images/soon1.svg')">
+                                    <div class="ticket-module--cardInner--o_CVS">
+                                        <div class="ticket-module--wrapper--1rRGj">
+                                            <div class="ticket-module--type--1aFoN">15th January</div>
+                                            <div class="ticket-module--des--1a8Wk">Available</div>
+                                        </div><a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.townscript.com/v1/e/flutter-bootcamp/booking"
+                                            class="ticket-module--button--2PiTF">Book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="tickets-module--vat--18F09">* Book Separate Tickets for both days.</p>
+                        <div>
+                            <div class="wrapper"><img src="./assets/images/tickets/l.svg" class="lT shape"
+                                    alt="Flutter BootCamp 2020 shapes" /><img src="./assets/images/tickets/m.svg"
+                                    class="mT shape" alt="Flutter BootCamp 2020 shapes" /><img
+                                    src="./assets/images/tickets/r.svg" class="rT shape"
+                                    alt="Flutter BootCamp 2020 shapes" /></div>
+                        </div>
+                    </section>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="p-b-85 p-t-75 bg-master-lightest main-page-attend">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-2">
-                    <h2 class="m-t-5 all-caps">Why<br />Attend</h2>
-                </div>
-                <div class="col-sm-12 col-md-10">
-                    <p>Whether you are new to Flutter or an experienced user, Flutter BootCamp will give you inspiration
-                        & technical knowledge for your software development journey. We have put together a mix of
-                        thought leaders &
-                        Flutter experts to cover topics like Firebase Integration, App States,
-                        APIs and play store deployment best practices.</p>
-                    <p>The purpose of the bootcamp is to network, share ideas & have meaningful conversations about how
-                        others are implementing Flutter in their organizations and more</p>
-                </div>
-            </div>
-            <br>
-        </div>
-    </section>
-    <section class="p-b-85 p-t-75 bg-master-lightest main-page-attend">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-2">
-                    <h2 class="m-t-5 all-caps">Attendee<br />Resource</h2>
-                </div>
-                <div class="col-sm-12 col-md-10">
-                    <p>Note: You should install <b>Flutter SDK (version 1.9.1+hotfix.6) and Android Studio</b> on your system before coming to BootCamp.</p>
-                    <p>Installation Guide: <a href="https://medium.com/enappd/install-flutter-on-windows-and-mac-1fd1dde453ba" target="_blank">https://medium.com/enappd/install-flutter-on-windows-and-mac-1fd1dde453ba</a></p>
-                    <p>GitHub Repository for BootCamp: <a href="https://github.com/ieeethapar/FlutterBootCamp" target="_blank">https://github.com/ieeethapar/FlutterBootCamp</a></p>
-                </div>
-            </div>
-            <br>
-        </div>
-    </section>
+                <section id="programme" class="sectionWrapper programme-module--programme--vEOkW" style="z-index:1">
+                    <div class="innerWrapper">
+                        <h1 class="sectionTitle">Programme</h1>
+                        <div class="programme-module--tabs--3MVoK"><button
+                                class="programme-module--active--1qonv programme-module--tab--ERoWu">
+                                <p>Day 1 (January 14)</p>
+                            </button><button class="programme-module--tab--ERoWu">
+                                <p>Day 2 (January 15)</p>
+                            </button></div>
+                        <div class="programme-module--tabsContent--1ZdU4">
+                            <div class="programme-module--tableWrapper--19r04">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:20%" />
+                                        <col style="width:40%" />
+                                        <col style="width:40%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="">
+                                            <td class="programItem-module--time--2b4O5">15:00-17:00</td>
+                                            <td class="">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">Pre Workshop
+                                                        (Installation & Setup)</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="programItem-module--time--2b4O5">17:00-17:15</td>
+                                            <td class="">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">Registration
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="programItem-module--time--2b4O5">17:15-17:30</td>
+                                            <td class="">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">Opening keynote</div>
 
-    <section class="speaker-info p-t-75 p-b-75" id="speakers">
-        <div class="container">
-            <div class="col-md-12">
-                <h2 class="m-t-5 all-caps text-center">Speakers</h2>
-            </div>
-            <div class="row p-t-30">
-                <div class="col-md-4 col-sm-6">
-                    <img alt="" src="assets/images/speakers/shivam.jpg"
-                        class="img-circle center-block speaker-img-info">
-                    <h4 class="m-b-0 text-center">Shivam Goyal</h4>
-                    <p class="text-center">
-                        ViceChairman
-                        <br>
-                        IEEE Student Branch TIET
-                        <br>
-                        <a href="https://github.com/ShivamGoyal1899" target="_blank"><i class="fa fa-github"></i></a>
-                        <a href="https://linkedin.com/in/ShivamGoyal1899" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://twitter.com/ShivamGoyal1899" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="https://medium.com/@ShivamGoyal1899" target="_blank"><i class="fa fa-medium"></i></a>
-                        <a href="mailto:hi@itsshivam.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                        <a href="https://itsshivam.com/" target="_blank"><i class="fa fa-globe"></i></a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img alt="" src="assets/images/speakers/utkarsh.jpg"
-                        class="img-circle center-block speaker-img-info">
-                    <h4 class="m-b-0 text-center">Utkarsh Mishra </h4>
-                    <p class="text-center">
-                        Technical Head
-                        <br>
-                        LEAD Thapar
-                        <br>
-                        <a href="https://github.com/utkarsh1148" target="_blank"><i class="fa fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/utkarsh-mishra-13b540172/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/utkarsh1414/" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100027503557629" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="mailto:utkarsh1148@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                        <a href="http://utkarshmishra.ml" target="_blank"><i class="fa fa-globe"></i></a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img alt="" src="assets/images/speakers/sidhant.jpg"
-                        class="img-circle center-block speaker-img-info">
-                    <h4 class="m-b-0 text-center">Sidhant Goyal </h4>
-                    <p class="text-center">
-                        Chairman
-                        <br>
-                        IEEE Student Branch TIET
-                        <br>
-                        <a href="https://github.com/GoyalSidhant" target="_blank"><i class="fa fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/sidhant-g-5a38b4110/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/ssidhantgoyal.co/" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/sidhant.goyal.1654" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="mailto:sidhant702@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="p-t-75 p-b-75 bg-master-lightest sponsor-info" id="sponsors">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 sm-text-center">
-                    <h2 class="m-t-5 all-caps">Agenda</h2>
-                    <p class="m-b-5">
-                        Day 1 - On-boarding & Building Beautiful UIs <br>
-                        Day 2 - Firebase Integration, APIs & App States <br>
-                    </p>
-                </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="programItem-module--time--2b4O5">17:30-18:00</td>
+                                            <td class="programItem-module--beginner--25HOf">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">A basic Context About
+                                                        Apps</div>
+                                                </div>
+                                            </td>
+                                            <td class="programItem-module--advanced--1yAfY">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">What are Native, Web,
+                                                        & Hybrid Apps?</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="programItem-module--time--2b4O5">18:00-18:30</td>
+                                            <td class="programItem-module--beginner--25HOf">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">What's flutter? Who's
+                                                        flutter for?</div>
+                                                </div>
+                                            </td>
+                                            <td class="programItem-module--advanced--1yAfY">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">What makes Flutter
+                                                        awesome? Widgets, Rendering & performance</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="programItem-module--time--2b4O5">18:30-19:00</td>
+                                            <td class="">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">Fun Quiz</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="programItem-module--time--2b4O5">19:00-19:30</td>
+                                            <td class="programItem-module--beginner--25HOf">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">Let's code. Dartpad /
+                                                        Android Studio.</div>
+                                                </div>
+                                            </td>
+                                            <td class="programItem-module--advanced--1yAfY">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">Building Beautiful
+                                                        UIs.</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="programItem-module--time--2b4O5">19:30-20:30</td>
+                                            <td class="programItem-module--beginner--25HOf">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">How to go online?
+                                                        Connecting to network.</div>
+                                                </div>
+                                            </td>
+                                            <td class="programItem-module--advanced--1yAfY">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">What are APIs? HTTP
+                                                        requests? Parsing JSON efficiently.</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="programItem-module--time--2b4O5">20:30-21:00</td>
+                                            <td class="">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">Doubts Resolution. One
+                                                        on One interaction.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="programItem-module--time--2b4O5"></td>
+                                            <td class="">
+                                                <div>
+                                                    <div class="programItem-module--title--2PWIR">See yaa tomorrow!
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="wrapper"><img src="./assets/images/prog/lt.svg" class="ltProg shape"
+                                alt="Flutter BootCamp 2020 shapes" /><img src="./assets/images/prog/cir.svg"
+                                class="cirProg shape" alt="Flutter BootCamp 2020 shapes" /><img
+                                src="./assets/images/prog/rb.svg" class="cirWhiteProg shape"
+                                alt="Flutter BootCamp 2020 shapes" /><img src="./assets/images/prog/rm.svg"
+                                class="lmProg shape" alt="Flutter BootCamp 2020 shapes" /></div>
+                    </div>
+                </section>
+                <section id="tickets" class="sectionWrapper tickets-module--tickets--1MDRB">
+                    <div class="innerWrapper">
+                        <h1 class="sectionTitle">Resources</h1>
+                        <p class="tickets-module--content--IjNW6">Here are the links to everything you will need in the
+                            BootCamp.</p>
+                        <div class="tickets-module--ticWrapper--vStOl">
+                            <div class="ticket-module--card--Ok2s9 ticket-module--soon--2ivZI">
+                                <div class="ticket-module--cardInner--o_CVS">
+                                    <div class="ticket-module--wrapper--1rRGj">
+                                        <div class="ticket-module--type--1aFoN">Installation Guide</div>
+                                        <div class="ticket-module--des--1a8Wk">by Shivam Goyal</div>
+                                    </div><a target="_blank" rel="noopener noreferrer"
+                                        href="https://medium.com/enappd/install-flutter-on-windows-and-mac-1fd1dde453ba"
+                                        class="ticket-module--button--2PiTF">READ</a>
+                                </div>
+                            </div>
+                            <div class="ticket-module--card--Ok2s9 ticket-module--soon--2ivZI">
+                                <div class="ticket-module--cardInner--o_CVS">
+                                    <div class="ticket-module--wrapper--1rRGj">
+                                        <div class="ticket-module--type--1aFoN">GitHub Repository</div>
+                                        <div class="ticket-module--des--1a8Wk">from IEEE Student Branch TIET</div>
+                                    </div><a target="_blank" rel="noopener noreferrer"
+                                        href="https://github.com/ieeethapar/FlutterBootCamp"
+                                        class="ticket-module--button--2PiTF">OPEN</a>
+                                </div>
+                            </div>
+                            <div class="ticket-module--card--Ok2s9 ticket-module--soon--2ivZI">
+                                <div class="ticket-module--cardInner--o_CVS">
+                                    <div class="ticket-module--wrapper--1rRGj">
+                                        <div class="ticket-module--type--1aFoN">Android Studio</div>
+                                        <div class="ticket-module--des--1a8Wk">version 191.6010548</div>
+                                    </div><a target="_blank" rel="noopener noreferrer"
+                                        href="https://dl.google.com/dl/android/studio/install/3.5.3.0/android-studio-ide-191.6010548-windows.exe"
+                                        class="ticket-module--button--2PiTF">Windows</a><a target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://dl.google.com/dl/android/studio/install/3.5.3.0/android-studio-ide-191.6010548-mac.dmg"
+                                        class="ticket-module--button--2PiTF">MacOS</a><a target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://dl.google.com/dl/android/studio/ide-zips/3.5.3.0/android-studio-ide-191.6010548-linux.tar.gz"
+                                        class="ticket-module--button--2PiTF">Linux</a>
+                                </div>
+                            </div>
+                            <div class="ticket-module--card--Ok2s9 ticket-module--soon--2ivZI">
+                                <div class="ticket-module--cardInner--o_CVS">
+                                    <div class="ticket-module--wrapper--1rRGj">
+                                        <div class="ticket-module--type--1aFoN">Flutter SDK</div>
+                                        <div class="ticket-module--des--1a8Wk">version 1.9.1+hotfix.6</div>
+                                    </div><a target="_blank" rel="noopener noreferrer"
+                                        href="https://storage.googleapis.com/flutter_infra/releases/stable/windows/flutter_windows_v1.9.1+hotfix.6-stable.zip"
+                                        class="ticket-module--button--2PiTF">Windows</a><a target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_v1.9.1+hotfix.6-stable.zip"
+                                        class="ticket-module--button--2PiTF">MacOS</a><a target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.9.1+hotfix.6-stable.tar.xz"
+                                        class="ticket-module--button--2PiTF">Linux</a>
+                                </div>
+                            </div>
+                            <div class="ticket-module--card--Ok2s9 ticket-module--soon--2ivZI">
+                                <div class="ticket-module--cardInner--o_CVS">
+                                    <div class="ticket-module--wrapper--1rRGj">
+                                        <div class="ticket-module--type--1aFoN">GitHub Desktop</div>
+                                        <div class="ticket-module--des--1a8Wk">version 2.2.4</div>
+                                    </div><a target="_blank" rel="noopener noreferrer"
+                                        href="https://central.github.com/deployments/desktop/desktop/latest/win32"
+                                        class="ticket-module--button--2PiTF">Windows</a><a target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://central.github.com/deployments/desktop/desktop/latest/darwin"
+                                        class="ticket-module--button--2PiTF">MacOS</a>
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://snapcraft.io/github-desktop"
+                                        class="ticket-module--button--2PiTF">Linux</a>
+                                </div>
+                            </div>
+                            <div class="ticket-module--card--Ok2s9 ticket-module--soon--2ivZI">
+                                <div class="ticket-module--cardInner--o_CVS">
+                                    <div class="ticket-module--wrapper--1rRGj">
+                                        <div class="ticket-module--type--1aFoN">WhatsApp Group</div>
+                                        <div class="ticket-module--des--1a8Wk">Flutter BootCamp 2020</div>
+                                    </div><a target="_blank" rel="noopener noreferrer"
+                                        href="https://chat.whatsapp.com/JhIzzC4zxOS0V2dX7aiW1r"
+                                        class="ticket-module--button--2PiTF">JOIN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tickets-module--vat--18F09">* Keep refreshing to see new links appearing.</p>
+                    <div>
+                        <div class="wrapper"><img src="./assets/images/tickets/l.svg" class="lT shape"
+                                alt="Flutter BootCamp 2020 shapes" /><img src="./assets/images/tickets/m.svg"
+                                class="mT shape" alt="Flutter BootCamp 2020 shapes" /><img
+                                src="./assets/images/tickets/r.svg" class="rT shape"
+                                alt="Flutter BootCamp 2020 shapes" /></div>
+                    </div>
+                </section>
+                <div>
+                    <section id="real-sponsors" class="sectionWrapper real-sponsors-module--realSponsors--1Dd1h">
+                        <div class="innerWrapper">
+                            <h1 class="sectionTitle">Sponsors &amp; partners</h1>
+                            <div class="real-sponsors-module--spWrapper--1ugXm">
+                                <div class="real-sponsors-module--row--3axPn">
+                                    <h2 style="background-color:#2199e3">Platinum</h2>
+                                    <figure><a target="_blank" rel="noopener noreferrer"
+                                            href="https://ieeethapar.com/"><img
+                                                src="./assets/images/sponsors/ieeethapar.png"
+                                                alt="IEEE Student Branch TIET" title="IEEE Student Branch TIET" /></a>
+                                    </figure>
+                                    <figure><a target="_blank" rel="noopener noreferrer"
+                                            href="https://leadthapar.com/"><img
+                                                src="./assets/images/sponsors/leadthapar.png" alt="LEAD Thapar"
+                                                title="LEAD Thapar" /></a></figure>
+                                </div>
+                                <div class="real-sponsors-module--row--3axPn">
+                                    <h2 style="background-color:#f8921f">Gold</h2>
+                                    <figure class="real-sponsors-module--gold--3Q0wU"><a target="_blank"
+                                            rel="noopener noreferrer"
+                                            href="https://azure.microsoft.com/en-in/free/students/"><img
+                                                src="./assets/images/sponsors/azure.png" alt="Microsoft Azure"
+                                                title="Microsoft Azure" /></a></figure>
+                                    <figure class="real-sponsors-module--gold--3Q0wU"><a target="_blank"
+                                            rel="noopener noreferrer" href="https://www.geeksforgeeks.org/"><img
+                                                src="./assets/images/sponsors/geeksforgeeks.png" alt="GeeksforGeeks"
+                                                title="GeeksforGeeks" /></a></figure>
+                                    <figure class="real-sponsors-module--gold--3Q0wU"><a target="_blank"
+                                            rel="noopener noreferrer" href="https://codechef.com/"><img
+                                                src="./assets/images/sponsors/codechef.png" alt="CodeChef"
+                                                title="CodeChef" /></a></figure>
+                                </div>
+                                <div class="real-sponsors-module--row--3axPn">
+                                    <h2 style="background-color:#dfe0e1">Silver</h2>
+                                    <figure style="max-width:200px"><a target="_blank" rel="noopener noreferrer"
+                                            href="https://codingninjas.com/"><img
+                                                src="./assets/images/sponsors/codingninjas.png" alt="Coding Ninjas"
+                                                title="Coding Ninjas" /></a></figure>
+                                    <figure style="max-width:200px"><a target="_blank" rel="noopener noreferrer"
+                                            href="https://codingblocks.com/"><img
+                                                src="./assets/images/sponsors/codingblocks.png" alt="Coding Blocks"
+                                                title="Coding Blocks" /></a></figure>
+                                </div>
+                                <div class="real-sponsors-module--row--3axPn">
+                                    <h2 style="background-color:#f05929">Bronze</h2>
 
-                <div class="col-sm-6 sm-text-center">
-                    <h2 class="m-t-5 all-caps">Become a Sponsor</h2>
-                    <p>Want to support this bootcamp?
-                        <br />Email us at <a href="mailto:flutter@ieeethapar.com">flutter@ieeethapar.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-primary p-b-60" id="register">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-12 m-t-40 m-b-20">
-                    <h3 class="text-white m-b-0 register-text">Register</h3>
-                </div>
-            </div>
-        </div>
-        <div class="container schedule-sub-content-bg">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12 pricing_tag">
-                    <img class="fx-6 lazy hidden-xs hidden-sm" data-pages="float" src="assets/images/01.png" alt=""
-                        data-max-top-translate="40" data-max-bottom-translate="300" data-speed="-0.1" data-delay="2500"
-                        data-curve="ease">
-                    <h3>Day 1</h3>
-                    <p>
-                        On-boarding & Building Beautiful UIs
-                    </p>
-                    <h4>FREE</h4>
-                    <button class="btn btn-primary" type="button"
-                        onclick="window.location.href = 'https://www.townscript.com/e/flutter-bootcamp'">Enroll
-                        now</button>
-                </div>
-                <div class="col-md-5 col-sm-12 col-xs-12 pricing_tag">
-                    <img class="fx-6 lazy hidden-xs hidden-sm" data-pages="float" src="assets/images/01.png" alt=""
-                        data-max-top-translate="40" data-max-bottom-translate="300" data-speed="-0.1" data-delay="2500"
-                        data-curve="ease">
-                    <h3>Day 2</h3>
-                    <p>
-                        Firebase Integration, APIs & App States
-                    </p>
-                    <h4>FREE</h4>
-                    <button class="btn btn-primary" type="button"
-                        onclick="window.location.href = 'https://www.townscript.com/e/flutter-bootcamp'">Enroll
-                        now</button>
-                </div>
-            </div>
+                                    <figure><a target="_blank" rel="noopener noreferrer"
+                                            href="https://townscript.com/"><img
+                                                src="./assets/images/sponsors/townscript.png" alt="Townscript"
+                                                title="Townscript" /></a>
+                                    </figure>
+                                    <figure><a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.stickermule.com/en-in"><img
+                                                src="./assets/images/sponsors/stickermule.png" alt="Sticker Mule"
+                                                title="Sticker Mule" /></a>
+                                    </figure>
+                                    <figure><a target="_blank" rel="noopener noreferrer"
+                                            href="https://scriptindia.org/"><img
+                                                src="./assets/images/sponsors/scriptfoundation.png"
+                                                alt="Script Foundation India" title="Script Foundation India" /></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- <section id="sponsors" class="sectionWrapper sponsors-module--sponsors--2MFmU">
+                        <div class="innerWrapper">
+                            <p class="sponsors-module--content--3mJOW">Would you like to support one of the most popular
+                                community events?</p>
+                            <p class="sponsors-module--content--3mJOW">Consider one of our partnership packages</p>
+                            <div class="sponsors-module--spWrapper--207aI">
+                                <div class="sponsors-module--row3--3DECC">
+                                    <section class="sponsor-module--card--265Ho ">
+                                        <div class="sponsor-module--title--2c5WL" style="background-color:#f05929">
+                                            <h1>bronze</h1>
+                                        </div>
+                                        <div class="sponsor-module--body--c15WR">
+                                            <div class="sponsor-module--list--3W9UX">
+                                                <p><b>Marketing</b></p>
+                                                <ul>
+                                                    <li>
+                                                        <p>SM post</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>LOGO on posters</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>LOGO on website</p>
+                                                    </li>
+                                                </ul>
+                                                <p><b>Event</b></p>
+                                                <ul>
+                                                    <li>
+                                                        <p> GADGETs and SWAG</p>
+                                                    </li>
+                                                </ul>
+                                                <p><b>Knowhow</b></p>
+                                                <ul>
+                                                    <li>
+                                                        <p>1 sponsored article</p>
+                                                    </li>
+                                                </ul>
+                                                <p></p>
+                                            </div>
+                                        </div><a target="_blank" rel="noopener noreferrer" href="#"
+                                            class="sponsor-module--selectButton--2Y4_5 buton-module--bt--3Ud8d">details</a>
+                                    </section>
+                                    <section class="sponsor-module--card--265Ho ">
+                                        <div class="sponsor-module--title--2c5WL" style="background-color:#dfe0e1">
+                                            <h1>silver</h1>
+                                        </div>
+                                        <div class="sponsor-module--body--c15WR">
+                                            <div class="sponsor-module--list--3W9UX">
+                                                <p><b>Bronze +</b></p>
+                                                <p><b>Marketing</b></p>
+                                                <p><b>+</b>  LOGO on SLIDERS and LEAFLETS</p>
+                                                <p>
+                                                </p>
+                                                <p><b>Event</b></p>
+                                                <p><b>+</b>  ROLLUP during the Conference</p>
+                                                <p><b>+</b>  FREE TICKET: 1 free ticket</p>
+                                                <p>
+                                                </p>
+                                                <p><b>Knowhow</b></p>
+                                                <p><b>+</b>  INTERVIEW with the company reps on SOCIAL MEDIA
 
-            <div class="row">
-                <div class="col-md-10 col-md-offset-2 col-sm-12 col-xs-12 m-t-20 f-12">
-                    <p>You need to get separate Day Pass for every session of the bootcamp.</p>
-                    <p>You need to get the QR-Code (sent in Email Confirmation) scanned in every session of the
-                        bootcamp.</p>
+                                                </p>
+                                                <p></p>
+                                            </div>
+                                        </div><a target="_blank" rel="noopener noreferrer" href="#"
+                                            class="sponsor-module--selectButton--2Y4_5 buton-module--bt--3Ud8d">details</a>
+                                    </section>
+                                    <section class="sponsor-module--card--265Ho ">
+                                        <div class="sponsor-module--title--2c5WL" style="background-color:#f8921e">
+                                            <h1>gold</h1>
+                                            <div class="sponsor-module--popular--1womP">Sold Out</div>
+                                        </div>
+                                        <div class="sponsor-module--body--c15WR">
+                                            <div class="sponsor-module--list--3W9UX">
+                                                <p><b>Silver +</b></p>
+                                                <p><b>Marketing</b></p>
+                                                <p><b>+</b>  LOGO on all printed and online materials (except for
+                                                    T-Shirts)</p>
+                                                <p><b>+</b>  summary position all SOCIAL MEDIA channels after the
+                                                    conference</p>
+                                                <p><b>+</b> SHOUTOUT at the beginning and the ending of the Conference
+                                                </p>
+                                                <p>
+                                                    <b>Event</b></p>
+                                                <p><b>+</b> OWN STAND 2x4m</p>
+                                                <p><b>+</b> FREE TICKETS: total of 2 tickets</p>
+                                                <p>
+                                                    <b>Knowhow</b></p>
+                                                <p><b>+</b> 1 speaker slot</p>
+                                            </div>
+                                        </div><a target="_blank" rel="noopener noreferrer" href="#"
+                                            class="sponsor-module--selectButton--2Y4_5 buton-module--bt--3Ud8d">details</a>
+                                    </section>
+                                </div>
+                                <div class="sponsors-module--row--1Ifbm"></div>
+                            </div>
+                        </div>
+                    </section> -->
+                </div>
+                <footer class="footer-module--footer--3zCYC">
+                    <div class="sectionWrapper footer-module--inner--31OX_">
+                        <nav class="footer-module--nav--1m83O">
+                            <ul>
+                                <li><a href="mailto:flutter@ieeethapar.com">Contact</a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href="#">Privacy policy</a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href="#">Regulations</a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href="#">Code of Conduct</a></li>
+                            </ul>
+                            <ul class="footer-module--social--1wDJr">
+                                <li><a target="_blank" rel="noopener noreferrer"
+                                        href="https://github.com/ieeethapar"><svg fill="#002161"
+                                            xmlns="http://www.w3.org/2000/svg" width="16.48" height="13.434"
+                                            viewBox="0 0 16.48 13.434">
+                                            <path id="Path_191"
+                                                d="M1346.1 49.56a6.874 6.874 0 0 0 4.97-1.4 3.459 3.459 0 0 1-3.16-2.36 3.841 3.841 0 0 0 1.51-.07 3.379 3.379 0 0 1-1.94-1.2 3.259 3.259 0 0 1-.74-2.16 3.5 3.5 0 0 0 1.51.41 3.4 3.4 0 0 1-1.4-2.06 3.357 3.357 0 0 1 .37-2.45 9.725 9.725 0 0 0 6.97 3.54c-.02-.22-.05-.42-.06-.62a3.384 3.384 0 0 1 3.95-3.49 3.258 3.258 0 0 1 1.79.92.249.249 0 0 0 .27.07 7.039 7.039 0 0 0 1.82-.69c.05-.03.09-.05.17-.09a3.412 3.412 0 0 1-1.4 1.82c.01.01.01.03.02.04.3-.06.61-.12.91-.2s.59-.19.92-.31a3.587 3.587 0 0 1-.39.51c-.38.38-.78.76-1.17 1.13a.3.3 0 0 0-.11.25 9.812 9.812 0 0 1-3.09 7.41 8.827 8.827 0 0 1-4.7 2.36 9.863 9.863 0 0 1-5.19-.44 9.164 9.164 0 0 1-1.75-.86c-.03-.01-.04-.02-.08-.06z"
+                                                class="cls-1" data-name="Path 191"
+                                                transform="translate(-1346.1 -37.648)">
+                                            </path>
+                                        </svg></a></li>
+                                <li><a target="_blank" rel="noopener noreferrer"
+                                        href="https://www.facebook.com/ieee.thapar"><svg fill="#002161"
+                                            xmlns="http://www.w3.org/2000/svg" width="13.421" height="13.43"
+                                            viewBox="0 0 13.421 13.43">
+                                            <path id="Path_192"
+                                                d="M1307.1 49.06v-9.39a.142.142 0 0 0 .02-.06 2.363 2.363 0 0 1 2.32-1.96c2.92.02 5.85.01 8.77.01a2.3 2.3 0 0 1 2.31 2.31v8.79a2.224 2.224 0 0 1-1.29 2.07 4.162 4.162 0 0 1-.73.24h-2.6c0-.02-.01-.04-.01-.06v-4.9c0-.03.01-.07.01-.11h2.21v-2.24h-2.22c0-.34-.01-.66 0-.98a.5.5 0 0 1 .55-.5h1.53a.528.528 0 0 0 .13-.01v-2.22h-1.95a1.316 1.316 0 0 0-.44.08 2.746 2.746 0 0 0-1.83 1.99 3.84 3.84 0 0 0-.1 1.17v.48h-1.63a.375.375 0 0 0-.01.1v2.03c0 .09.03.11.11.11h1.53v5.07h-4.69a.142.142 0 0 0-.06-.02 2.241 2.241 0 0 1-1.72-1.28c-.09-.23-.14-.48-.21-.72z"
+                                                class="cls-1" data-name="Path 192"
+                                                transform="translate(-1307.1 -37.65)">
+                                            </path>
+                                        </svg></a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer-module--rights--2haJQ">All Rights Reserved © 2020</div>
+                    </div>
+                    <p class="footer-module--disclaimer--2a9WR">Flutter and the related logo are trademarks of Google
+                        LLC. Flutter BootCamp is not affiliated with or otherwise sponsored by Google LLC.</p>
+                </footer>
+                <div class="sc-bdVaJa iQxnbx">
+                    <div style="display:none"><button class="backToTop-module--button--xt8Id">↑</button></div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="sponsor-info bg-master-lightest schedule-space-info p-b-85 p-t-75 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 border-rb">
-                    <a href="https://ieeethapar.com/" target="_blank"><img src="assets/images/ieee.png"></a>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 border-rb">
-                    <!-- <h3 class="m-tb-40 head-p">Organizer</h3> -->
-                    <a href="https://leadthapar.com/" target="_blank"><img src="assets/images/lead.png"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="venue" id="venue">
-        <div class="map-info">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.8801555596033!2d76.36906371489458!3d30.354355710820883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028abdad39763%3A0xa7f6232cbef903a4!2sThapar%20Institute%20of%20Engineering%20And%20Technology!5e0!3m2!1sen!2sin!4v1578145903632!5m2!1sen!2sin"
-                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-    </section>
-    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="assets/pages/js/pages.image.loader.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- BEGIN SWIPER DEPENDENCIES -->
-    <script type="text/javascript" src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/velocity/velocity.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/velocity/velocity.ui.js"></script>
-    <!-- BEGIN RETINA IMAGE LOADER -->
-    <script type="text/javascript" src="assets/plugins/jquery-unveil/jquery.unveil.min.js"></script>
-    <!-- END VENDOR JS -->
-    <!-- BEGIN PAGES FRONTEND LIB -->
-    <script type="text/javascript" src="assets/pages/js/pages.frontend.js"></script>
-    <!-- END PAGES LIB -->
-    <!-- BEGIN YOUR CUSTOM JS -->
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-    <!-- END PAGES LIB -->
-
-    <script src="assets/js/noise.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/swirl.js"></script>
-    <script src="assets/js/demo.js"></script>
-    <script src="assets/js/validate.min.js"></script>
-    <script src="assets/js/jquery.growl.min.js"></script>
-    <script src="assets/js/utm_form-1.0.4.js"></script>
+    </div>
+    <!-- <script id="gatsby-script-loader">
+        /*<![CDATA[*/
+        window.pagePath = "/";
+        window.webpackCompilationHash = "9fe0ebd698a9866230cb"; /*]]>*/
+    </script>
+    <script id="gatsby-chunk-mapping">
+        /*<![CDATA[*/
+        window.___chunkMapping = {
+            "app": ["/app-990fd211daeb423c981b.js"],
+            "component---src-pages-index-js": ["/component---src-pages-index-js-bdeea8bfe048db461174.js"]
+        }; /*]]>*/
+    </script> -->
+    <script src="./assets/js/component---src-pages-index-js-bdeea8bfe048db461174.js" async=""></script>
+    <script src="./assets/js/styles-fcb43382a32f539c86e2.js" async=""></script>
+    <script src="./assets/js/commons-914a461f227e27f3d482.js" async=""></script>
+    <script src="./assets/js/app-990fd211daeb423c981b.js" async=""></script>
+    <script src="./assets/js/webpack-runtime-4660d53d999b0c41fd8a.js" async=""></script>
 </body>
 
 </html>

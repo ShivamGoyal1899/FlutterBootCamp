@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.036" height="34.791" viewBox="0 0 34.036 34.791">
+    <defs>
+        <style>
+            .cls-1{fill:#f05929}.cls-2{filter:url(#Path_544)}
+        </style>
+        <filter id="Path_544" width="25.019" height="34.791" x="9.018" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="2"/>
+            <feGaussianBlur result="blur" stdDeviation="2"/>
+            <feFlood flood-opacity=".169"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_922" data-name="Group 922" transform="translate(-1057.871 -1141.541)">
+        <path id="Path_543" d="M1083.907 1152.331a6.807 6.807 0 0 0-6.623-6.834 6.624 6.624 0 0 0-6.4 4.9 6.625 6.625 0 0 0-6.4-4.9 6.807 6.807 0 0 0-6.623 6.834c0 8.1 12.873 16.045 12.873 16.045s13.173-7.819 13.173-16.045z" class="cls-1" data-name="Path 543"/>
+        <g class="cls-2" transform="translate(1057.87 1141.54)">
+            <path id="Path_544-2" d="M1077.284 1145.541a6.624 6.624 0 0 0-6.4 4.9v17.889c1.43-.879 13.018-8.239 13.018-15.957a6.807 6.807 0 0 0-6.618-6.832z" class="cls-1" data-name="Path 544" transform="translate(-1057.87 -1141.54)"/>
+        </g>
+    </g>
+</svg>

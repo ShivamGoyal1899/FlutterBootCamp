@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="tlo_Q_A" width="1440" height="832.907" data-name="tlo Q&amp;A" viewBox="0 0 1440 832.907">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{filter:url(#Path_555)}.cls-3{filter:url(#Path_531)}.cls-4{filter:url(#Path_530)}
+        </style>
+        <filter id="Path_530" width="236.771" height="236.773" x="649.547" y="305.049" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Path_531" width="385.633" height="386.615" x="153.723" y="158.25" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="2"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3.5"/>
+            <feFlood flood-opacity=".149"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Path_555" width="614.117" height="534.733" x="718.738" y="298.174" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="2"/>
+            <feGaussianBlur result="blur-3" stdDeviation="2"/>
+            <feFlood flood-opacity=".149"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path id="Rectangle_632" d="M0 0h1440v828H0z" class="cls-1" data-name="Rectangle 632"/>
+    <g id="Group_894" data-name="Group 894" transform="translate(-1.066 -6344.526)">
+        <g id="Group_893" class="cls-4" data-name="Group 893" transform="translate(1.07 6344.53)">
+            <path id="Path_530-2" d="M771.85 6655.613a109.386 109.386 0 1 0 106.5 112.2 109.385 109.385 0 0 0-106.5-112.2zm55.611 111.315a58.482 58.482 0 1 1-56.937-59.987 58.482 58.482 0 0 1 56.937 59.987z" class="cls-1" data-name="Path 530" transform="translate(-1.07 -6344.53)"/>
+        </g>
+    </g>
+    <g class="cls-3">
+        <path id="Path_531-2" d="M225.038 6876.89c-83.1-84.183-82.214-219.789 1.968-302.884s217.82-84.184 300.916 0z" class="cls-1" data-name="Path 531" transform="translate(-1.07 -6344.53)"/>
+    </g>
+    <g class="cls-2">
+        <path id="Path_555-2" d="M1266.588 6625.7c103.76 150.6 68.371 360.486-82.227 464.246s-356.795 65.792-460.561-84.806z" class="cls-1" data-name="Path 555" transform="translate(-1.07 -6323.53)"/>
+    </g>
+</svg>

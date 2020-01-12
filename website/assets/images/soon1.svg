@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="867" height="100" viewBox="0 0 867 100">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{filter:url(#Ellipse_646)}.cls-3{filter:url(#Path_1046)}
+        </style>
+        <filter id="Path_1046" width="90.238" height="83.9" x="450.398" y="14.163" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Ellipse_646" width="89.57" height="89.834" x="578.338" y="7.924" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_3024" data-name="Group 3024" transform="translate(-287.73 -4059.52)">
+        <g id="Group_3095" data-name="Group 3095" transform="translate(287.73 4059.52)">
+            <g id="Group_2886" data-name="Group 2886" transform="translate(0 .03)">
+                <g id="Group_2885" data-name="Group 2885">
+                    <path id="Path_1078" d="M0 0h867v99.97H0z" class="cls-1" data-name="Path 1078"/>
+                </g>
+            </g>
+            <g id="Group_2889" data-name="Group 2889" transform="translate(459.398 20.164)">
+                <g id="Group_2888" data-name="Group 2888" transform="rotate(-90 32.95 32.95)">
+                    <g id="Group_2887" class="cls-3" data-name="Group 2887" transform="rotate(90 272.73 -186.67)">
+                        <path id="Path_1046-2" d="M65.9 72.215c-.135 0-.269.023-.411.023C29.151 71.991-.226 39.586 0 0l29.69.193c-.128 22.542 15.29 40.992 35.976 41.131.078 0 .156-.008.234-.008z" class="cls-1" data-name="Path 1046" transform="rotate(-90 272.73 -186.67)"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_2891" data-name="Group 2891" transform="translate(476.21)">
+                <g id="Group_2890" data-name="Group 2890">
+                    <path id="Path_1047" d="M1154.2 4159.49H763.41l164.97-99.97 225.82.25z" class="cls-1" data-name="Path 1047" transform="translate(-763.41 -4059.52)"/>
+                </g>
+            </g>
+            <g id="Group_2893" data-name="Group 2893" transform="translate(587.337 13.924)">
+                <g id="Group_2892" class="cls-2" data-name="Group 2892" transform="translate(-587.34 -13.92)">
+                    <ellipse id="Ellipse_646-2" cx="35.741" cy="35.609" class="cls-1" data-name="Ellipse 646" rx="35.741" ry="35.609" transform="rotate(-89.71 336.587 -252.46)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
