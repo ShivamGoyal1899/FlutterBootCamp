@@ -1,6 +1,6 @@
-# diving_deeper
+# whatsapp
 
-FlutterBootCamp 2020
+WhatsApp UI Clone
 
 ## Getting Started
 

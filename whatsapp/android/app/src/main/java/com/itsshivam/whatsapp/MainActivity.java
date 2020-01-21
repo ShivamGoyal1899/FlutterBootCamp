@@ -1,4 +1,4 @@
-package com.itsshivam.diving_deeper;
+package com.itsshivam.whatsapp;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
